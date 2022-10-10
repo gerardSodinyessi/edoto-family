@@ -1,0 +1,3530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!----------la ligne 447------------>
+    <div id="ilfautscroller">
+        <div class="container">
+            <header class="header">
+                <div class="calendar">
+                    <time id="timeLUN">
+                        <abbr>Mo</abbr>
+                        <span>24</span>
+                    </time>
+                    <time id="timeMAR">
+                        <abbr>Tu</abbr>
+                        <span>25</span>
+                    </time>
+                    <time class="active" id="timeMER">
+                        <abbr>We</abbr>
+                        <span>26</span>
+                    </time>
+                    <time id="timeJEU">
+                        <abbr>Th</abbr>
+                        <span>27</span>
+                    </time>
+                    <time id="timeVEN">
+                        <abbr>Fr</abbr>
+                        <span>28</span>
+                    </time>
+                    <time id="timeSAR">
+                        <abbr>Sa</abbr>
+                        <span>29</span>
+                    </time>
+                    <time id="timeDIM">
+                        <abbr>Su</abbr>
+                        <span>30</span>
+                    </time>
+                </div>
+                <h5 style="padding: 2px;" id="JourActive">Today, 02 Feb</h5>
+            </header>
+            <section class="content">
+                <div class="content-main">
+                    <div style=" width: 100px;height: 150px; display: none;" id="loader1">
+                        <div id="loader" style="background-color: black;"></div>
+                    </div>
+                    <div class="progress blue" data-toggle="modal"
+                        data-target="#exampleModalstartexeme" style="cursor: pointer;"
+                        id="perfori">
+                        <span class="progress-left">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <span class="progress-right">
+                            <span class="progress-bar"></span>
+                        </span>
+                        <div
+                            style="width: 150px; height: 150px; border: blanchedalmond 3px solid; background-color: rgb(42, 40, 40); border-radius: 100%;">
+                            <div>
+                                <p style="margin-top: 10px; margin-left: 6px; color: white">
+                                    <em>Cliquer ici</em></p>
+                                <h6 style="margin-top: 13px; margin-left: 12px; color: white;">
+                                    Performance</h6>
+                                <h1 style=" margin-left: 10px; color: white;">78%
+                                </h1>
+
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h2 style="color: #f82249; margin-top: 5px;">Votre etat est normale</h2>
+                    <p>Veillez scroller vers le bas pour plus d'info</p>
+                    <footer class="footer">
+                        <div>
+                            <h5 class="counter">37</h5>
+                            <span class="vertical-line"></span>
+                            <a href="#!" class="active">
+                                <img class="" style="margin-top: 5px; margin-left: 3px;"
+                                    src="assets/images/menthermo.svg" alt="User Image">
+
+                            </a>
+                        </div>
+                        <div>
+                            <h5>13mhg</h5>
+                            <span class="vertical-line"></span>
+                            <a href="#!">
+                                <img class="" style="margin-top: 5px; margin-left: 5px;"
+                                    src="assets/images/menheart.svg" alt="User Image">
+
+                            </a>
+                        </div>
+
+                        <div>
+                            <h5>67%</h5>
+                            <span class="vertical-line"></span>
+                            <a href="#!">
+                                <img class="" style="margin-top: 5px; margin-left: 5px;"
+                                    src="assets/images/297724.svg" alt="User Image">
+
+                            </a>
+                        </div>
+                        <div>
+                            <h5>3000</h5>
+                            <span class="vertical-line"></span>
+                            <a href="#!">
+                                <img class=" " style="margin-top: 5px; margin-left: 5px;"
+                                    src="assets/images/human-footprints-svgrepo-com.svg"
+                                    alt="User Image">
+
+                            </a>
+                        </div>
+
+                    </footer>
+                    <button class="btn-pink btn-primary" data-toggle="modal"
+                        data-target="#exampleModalapp" data-whatever="@mdo">Examen Detail
+                    </button>
+
+                    <a href="../../Serenity/ExamentDedail.html"><button class="btn-pink"
+                            data-whatever="@mdo" id="Detailbut" style="display: none;">
+                            Detail</button></a>
+
+                    <div class="modal fade" id="exampleModalstartexeme" tabindex="-1"
+                        role="dialog" aria-labelledby="exampleModalstartexemeLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalstartexemeLabel"
+                                        style="color: #f82249;">Veiller
+                                        bien remplir ce formulaire</h5>
+                                    <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <form id="entrerTaille">
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label"
+                                                style="color: #f82249;">Entrer votre
+                                                poids</label>
+                                            <input type="text" class="form-control" value="107"
+                                                id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label"
+                                                style="color: #f82249;">Entrer votre
+                                                taille</label>
+                                            <input type="text" class="form-control" value="1m55"
+                                                id="recipient-name">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="recipient-name" class="col-form-label"
+                                                style="color: #f82249;">Entrer votre votre
+                                                âge</label>
+                                            <input type="text" class="form-control" value="67"
+                                                id="recipient-name">
+                                        </div>
+                                    </form>
+                                    <div class="modal-body">
+
+                                        <body style="margin:0;">
+
+                                        </body>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-info"
+                                        data-dismiss="modal">Fermer</button>
+                                    <button type="button" class="btn btn-danger"
+                                        onclick="commentLexamen()">Valider</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!------------------------>
+                    <div class="content-inner">
+                        <div class="timeline">
+                            <time>
+                                8:20 AM
+                            </time>
+                            <div class="timeline-content">
+                                <div class="top">
+                                    <div class="icons">
+                                        <span class="pill"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h2>Sergel</h2>
+                                        <span>20 mg, Take 1</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icons">
+                                        <span class="tablet"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h2>Dribbble</h2>
+                                        <span>120 mg, Take 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <time>
+                                8:20 AM
+                            </time>
+                            <div class="timeline-content">
+                                <div class="top">
+                                    <div class="icons">
+                                        <span class="tablet blue"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h2>Sergel</h2>
+                                        <span>20 mg, Take 1</span>
+                                    </div>
+                                </div>
+                                <div class="bottom">
+                                    <div class="icons">
+                                        <span class="pill"></span>
+                                    </div>
+                                    <div class="text">
+                                        <h2>Dribbble</h2>
+                                        <span>120 mg, Take 1</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </div>
+    <!----------la ligne 447------------>
+
+     <!----------la ligne 454------------>
+    <div class="modal fade" id="exampleModalapp" tabindex="-1" role="dialog"
+    aria-labelledby="exampleModalappLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><img src="assets/images/alarme.svg"
+                        alt="">
+                    <p id="demoTimer"></p>
+                </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+                </script>
+                <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+                <script>
+                    var xValues = ["Temperature %", "Tension mhg", "Sommeil %", "Pas"];
+                    var yValues = [55, 49, 44, 124];
+                    var barColors = ["red", "green", "blue", "orange", "brown"];
+
+                    new Chart("myChart", {
+                        type: "bar",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                                backgroundColor: barColors,
+                                data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: {
+                                display: false
+                            },
+                            title: {
+                                display: true,
+                                text: "Voici les performances du mois en cours"
+                            }
+                        }
+                    });
+                </script>
+                <h1 style="text-align: center;">Les résultas</h1>
+                <p><em>Votre examen relève toujours que votre température et votre tension sont à 
+                    la normal. Vous avez des difficultés à bien dormis après les 18 h  de votre 
+                    journée. ces difficultés sont liée à des troubles psychologiques plus ou moins 
+                    sévères, comme le stress, l'anxiété et la dépression. Veillez beaucoup marcher les
+                     jours à venir en faisant au moins 5000 pas dans une journée pour perdre de calorie et 
+                     vous détendre.  Dans le cas de doute nous vous conseillons de contacter 
+                    votre médecin au plus vite possible. </em></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary">Enregistrer</button>
+            </div>
+        </div>
+    </div>
+</div>
+ <!----------la ligne 454------------>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Gappa is a bootstrap minimal & clean admin template">
+	<meta name="keywords" content="chat, chat platform, discussion, video call, voice call, communication, conversation, messange, messanger, talk">
+	<meta name="author" content="Themesbox">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<title>e-hospital Chat patient</title>
+	<!-- Fevicon -->
+	<link rel="shortcut icon" href="assets/images/logo de e-doto-retenue.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+	<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="evo-calendar.midnight-blue.min.css">
+	<link rel="stylesheet" href="evo-calendar.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+	<!-- Font Awesome -->
+
+    <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1000
+            });
+        });
+    </script>
+
+	<!-- Start css -->
+	<!-- Slick css -->
+	<link rel="stylesheet" href="patient.css">
+	<link href="assets/plugins/slick/slick.css" rel="stylesheet">
+	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="scanner.css">
+	<!-- End css -->
+</head>
+
+<body class="dark-layout">
+	<div id="toutChatdoctorhide">
+		<!-- Start Create Group Modal -->
+		<div class="modal create-group-modal fade" id="createGroup" tabindex="-1" role="dialog"
+			aria-labelledby="createGroupTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="createGroupTitle" style="color:#f82249 ;">Crér votre IMC</h5>
+						<h5 class="modal-title" id="createGroupTitleup" style="color:#f82249 ; display: none;">Mettre à
+							jour votre IMC</h5>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputEmail4">Last Name</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="SODINYESSI"
+											aria-label="SODINYESSI" aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+								<div class="form-group col-md-6">
+									<div class="media-body">
+										<p>First Name</p>
+										<div class="input-group">
+											<input type="text" class="form-control" value="Senou Gerard"
+												aria-label="Senou Gerard"
+												aria-describedby="button-addon-group-username">
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputAddress">Address</label>
+								<div class="input-group">
+									<input type="text" class="form-control" value="sodinyessigerard@gmail.com"
+										aria-label="sodinyessigerard@gmail.com"
+										aria-describedby="button-addon-group-username">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputAddress2">Lieu de résidence</label>
+								<div class="input-group">
+									<input type="text" class="form-control" value="cotonou(Akpakpa-kpondéhou2) "
+										aria-label="cotonou(Akpakpa-kpondéhou2)"
+										aria-describedby="button-addon-group-username">
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputCity">L'âge</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="24 ans" aria-label="24 ans"
+											aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="inputState">Groupe Sanguin</label>
+									<select id="inputState" class="form-control">
+										<option selected>A</option>
+										<option>A+</option>
+										<option>A-</option>
+										<option>B</option>
+										<option>B+</option>
+										<option>B-</option>
+										<option>AB</option>
+										<option>AB+</option>
+										<option>AB-</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="inputZip">Taille</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="1,50m" aria-label="1,50m"
+											aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputCity">Proffession</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="Developer web mobile"
+											aria-label="Developer web mobile"
+											aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="inputState"> Matrimoniale</label>
+									<select id="inputState" class="form-control">
+										<option selected>Marié</option>
+										<option>Célibataire</option>
+										<option>Célibataire sans enfant</option>
+										<option>Célibataire avec enfant</option>
+										<option>En Couple</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="inputState">Le sexe</label>
+									<select id="inputState" class="form-control">
+										<option selected>Masculin</option>
+										<option>Féminin</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="form-group col-md-6">
+									<label for="inputCity">City</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="Will Patinson"
+											aria-label="Will Patinson" aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+								<div class="form-group col-md-4">
+									<label for="inputState">State</label>
+									<select id="inputState" class="form-control">
+										<option selected>Choose...</option>
+										<option>...</option>
+									</select>
+								</div>
+								<div class="form-group col-md-2">
+									<label for="inputZip">Zip</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="Will Patinson"
+											aria-label="Will Patinson" aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="form-check">
+									<input class="form-check-input" type="checkbox" id="gridCheck">
+									<label class="form-check-label" for="gridCheck">
+										Check me out
+									</label>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<div class="form-group">
+									<label for="inputAddress2">Nom et Prenom du Père</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="SODINYESSI Agbotoédo"
+											aria-label="SODINYESSI Agbotoédo"
+											aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputState">Groupe Sanguin</label>
+								<select id="inputState" class="form-control">
+									<option selected>A</option>
+									<option>A+</option>
+									<option>A-</option>
+									<option>B</option>
+									<option>B+</option>
+									<option>B-</option>
+									<option>AB</option>
+									<option>AB+</option>
+									<option>AB-</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<div class="form-group">
+									<label for="inputAddress2">Address 2</label>
+									<div class="input-group">
+										<input type="text" class="form-control" value="Houènon Akponton"
+											aria-label="Houènon Akponton"
+											aria-describedby="button-addon-group-username">
+									</div>
+								</div>
+							</div>
+							<div class="form-group col-md-4">
+								<label for="inputState">Groupe Sanguin</label>
+								<select id="inputState" class="form-control">
+									<option selected>A</option>
+									<option>A+</option>
+									<option>A-</option>
+									<option>B</option>
+									<option>B+</option>
+									<option>B-</option>
+									<option>AB</option>
+									<option>AB+</option>
+									<option>AB-</option>
+								</select>
+							</div>
+							<div class="add-users-search">
+								<div class="input-group">
+									<input type="search" class="form-control" placeholder="Search" aria-label="Search"
+										aria-describedby="add-users-search-btn">
+									<div class="input-group-append">
+										<button class="btn" type="submit" id="add-users-search-btn"><img
+												src="assets/images/search.svg" alt="Generic placeholder image"></button>
+									</div>
+								</div>
+							</div>
+							<div class="add-users-list">
+								<ul class="list-unstyled">
+									<li class="media">
+										<div class="media-body">
+											<h5><span>Le Paludisme</span></h5>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="userfirstAdd"
+												checked>
+											<label class="custom-control-label" for="userfirstAdd"></label>
+										</div>
+									</li>
+									<li class="media">
+										<div class="media-body">
+											<h5>L'hépathite</h5>
+
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="usersecondAdd">
+											<label class="custom-control-label" for="usersecondAdd"></label>
+										</div>
+									</li>
+									<li class="media">
+										<div class="media-body">
+											<h5>L'hémorroide</h5>
+										</div>
+										<div class="custom-control custom-checkbox">
+											<input type="checkbox" class="custom-control-input" id="userthirdAdd"
+												checked>
+											<label class="custom-control-label" for="userthirdAdd"></label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</form>
+					</div>
+					<div class="container mt-4">
+						<h4 style="text-align: center;">
+							<p>Ajouter un test</p>
+						</h4>
+						<form id="book-form">
+							<div class="form-group">
+								<label for="title">Nom de l'examen</label>
+								<input type="text" id="title" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="title">Nom du Docteur</label>
+								<input type="text" id="title" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="title">L'hopital</label>
+								<input type="text" id="title" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="title">La date</label>
+								<input type="text" id="title" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="title">L'heure</label>
+								<input type="text" id="title" class="form-control">
+							</div>
+							<div class="form-group">
+								<label for="author">Les Résultats</label>
+								<textarea type="text" id="author" class="form-control"></textarea>
+							</div>
+							<div class="form-group">
+								<label for="isbn">Fichiers</label>
+								<input type="file" id="isbn" class="form-control">
+							</div>
+						</form>
+					</div>
+					<div class="mt-3 text-center">
+						<button type="submit" class="btn btn-primary"
+							style="margin-bottom: 12px; display: inline-flex;"><img
+								src="assets/images/more-verticale.svg" style="margin-right: 6px;" alt="avatar"
+								class="rounded-circle">
+							<p id="btn-primaryc">Créer DIMU</p>
+							<p style="display: none;" id="update">Mettre à jour</p>
+						</button>
+						<button class="btn btn-danger" id="btn-primaryquitter"
+							style="margin-bottom: 12px; margin-left: 7px; padding: 9px;"
+							onclick="quit()">Quitter</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal create-group-modal fade" id="scanner-qr-code" tabindex="-1" role="dialog"
+			aria-labelledby="createGroupTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document" style="background-color: cornsilk;">
+				<div>
+					<img src="assets/images/qr-code.png" alt="avatar" style="width: 100%; height: 100%;">
+				</div>
+			</div>
+		</div>
+		<!-- End Incoming Video Call Modal -->
+		<!-- Start Incoming Video Call Modal -->
+		<div class="modal incoming-video-modal fade" id="incomingVideoCall" tabindex="-1" role="dialog"
+			aria-labelledby="incomingVideoCallTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="incomingVideoCallTitle">Appel vidéo entrant</h5>
+					</div>
+					<div class="modal-body">
+						<img src="assets/images/girl.svg" alt="avatar" class="rounded-circle">
+						<h5 class="text">Jessica Meir</h5>
+						<p class="text">Texas, USA</p>
+						<button type="button" class="btn btn-success mr-3" onclick="toutChatdoctorhide()"><i
+								class="fa fa-check mr-2"></i>Accepter</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><i
+								class="fa fa-close mr-2"></i>Rejecter</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Incoming Video Call Modal -->
+		<!-- Start Incoming Voice Call Modal -->
+		<div class="modal incoming-voice-modal fade" id="incomingVoiceCall" tabindex="-1" role="dialog"
+			aria-labelledby="incomingVoiceCallTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="incomingVoiceCallTitle">Appel vocal entrant</h5>
+					</div>
+					<div class="modal-body">
+						<img src="assets/images/men.svg" alt="avatar" class="rounded-circle">
+						<h5>Jessica Meir</h5>
+						<p>Texas, USA</p>
+						<button type="button" class="btn btn-success mr-3" onclick="voiceCalling()"><i
+								class="fa fa-check mr-2"></i>Accepter</button>
+						<button type="button" class="btn btn-danger" data-dismiss="modal"><i
+								class="fa fa-close mr-2"></i>Rejecter</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Incoming Voice Call Modal -->
+		<!-- Start Error Screen Modal -->
+		<div class="modal error-screen-modal fade" id="errorScreen" tabindex="-1" role="dialog"
+			aria-labelledby="errorScreenTitle" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content" style="background-color: #f82249;">
+					<div class="modal-header">
+						<h5 class="modal-title" id="errorScreenTitle">Connection Error</h5>
+					</div>
+					<div class="modal-body">
+						<img src="assets/images/connection_error.svg" class="img-fluid" alt="connection_error">
+						<h5>Ordinateur non connecté</h5>
+						<p style="color: white;">Veuillez vérifier la connexion Internet de ce PC.</p>
+						<button type="button" class="btn btn-info"><img src="assets/images/iconerror.svg" alt=""
+								style="width: 20px; height: 20px;"> Essayez à nouveau</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Incoming Voice Call Modal -->
+		<!-- Start Chat Layout -->
+		<div class="chat-layout">
+			<!-- Start Chat Leftbar -->
+			<div class="chat-leftbar">
+				<div class="tab-content" id="pills-tab-justifiedContent">
+					<!-- Start Chat Addbar -->
+					<div class="tab-pane fade show active" id="pills-addchat-justified" role="tabpanel"
+						aria-labelledby="pills-addchat-tab-justified">
+						<div class="chat-addbar">
+							<div class="chat-left-headbar">
+								<div class="row align-items-center">
+									<div class="col-8">
+										<ul class="list-unstyled mb-0">
+											<li class="media">
+												<img class="align-self-center mr-2" src="assets/images/men1.png"
+													alt="Generic placeholder image"
+													style="width: 44px; height: 44px; border-radius: 100%;">
+												<div class="media-body">
+													<h5 class="mb-0 mt-2">Mon tracking</h5>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-4">
+										<a href="#" data-toggle="modal" data-target="#createGroup"><img
+												src="assets/images/folder-plus.svg" alt="Generic placeholder image"
+												style="margin-right: 12px;"></a>
+										<div class="dropdown">
+											<a href="#" id="settingDropdown" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false"> <img src="assets/images/more-scanner-qr-code.svg"
+													alt="Generic placeholder image" style="margin-right: 20px;">
+												<div class="dropdown-menu dropdown-menu-right"
+													aria-labelledby="settingDropdown">
+													<a class="dropdown-item font-14" data-toggle="modal"
+														data-target="#scanner-qr-code" href="#">Scanner DIMU</a>
+
+													<a class="dropdown-item font-14" href="saisirImu.html">Saisir le
+														code
+														DIMU</a>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!---------<le scanner commence--------->
+
+						</div>
+					</div>
+
+					<!-- Button trigger modal -->
+
+					<!---------<calendrier--------->
+					<script src="evo-calendar.min.js"></script>
+					<div id="calendar"></div>
+					<script>
+						 $('#calendar').evoCalendar({
+              
+							
+            			})
+					</script>
+					
+					<!---------<calendrier--------->
+
+					<!-- End Chat Addbar -->
+					<!-- Start Chat Listbar -->
+					<div class=" tab-pane fade" id="pills-chat-justified" role="tabpanel"
+						aria-labelledby="pills-chat-tab-justified">
+						<div class="chat-listbar">
+							<div class="chat-left-headbar">
+								<div class="row align-items-center">
+									<div class="col-5">
+										<ul class="list-unstyled mb-0">
+											<li class="media">
+												<img class="align-self-center mr-2" src="assets/images/men1.png"
+													alt="Generic placeholder image"
+													style="width: 44px; height: 44px; border-radius: 100%;">
+												<div class="media-body">
+													<h5 class="mb-0 mt-2">Chat</h5>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-7">
+										<a href="login.html" data-toggle="tooltip" data-placement="right"
+											title="Logout"><i class="fa fa-sign-out" style="color: #f82249;"></i></a>
+										<div class="dropdown">
+											<a href="#" id="settingDropdown" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false"><img src="assets/images/more-scanner-qr-code.svg"
+													alt="Generic placeholder image"
+													style="margin-right: 30px; margin-left: 30px;">
+												<a style="display: inline-flex; width: 23px; cursor: pointer;">
+													<span class="badge badge-primary " style="position:relative; 
+											  left: 13px;   font-size: 9px; border-radius: 100%; width: 15px; height: 15px;"
+														id="numberNotification">2</span>
+													<img src="assets/images/notifica.svg"
+														alt="Generic placeholder image" onclick="openNav()"
+														style="position: absolute; top: 5px;">
+												</a>
+												<div class="dropdown-menu dropdown-menu-right"
+													aria-labelledby="settingDropdown">
+													<a class="dropdown-item font-14" data-toggle="modal"
+														data-target="#scanner-qr-code" href="#">Scanner DIMU</a>
+
+													<a class="dropdown-item font-14" href="saisirImu.html">Saisir le
+														code
+														DIMU</a>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</head>
+
+							<body>
+
+								<div id="mySidenav" class="sidenav" style="margin-top: 75px; padding-bottom: 145px;">
+									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+									<div class="chat-left-body" style="height: 100vh; ">
+										<div class="nav flex-column nav-pills chat-userlist"
+											id="chat-list-tabnotification" role="tablist" aria-orientation="vertical">
+											<div style="background-color: rgb(9, 12, 31);" id="orderun">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">BONO paul</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="orderuna()">Suprimer cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="orderunb()">Ne plus recevoir cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="orderunc()">Valider cette
+																			notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop"> cout bgt de la donneTout
+															drtey
+															bon mon sera donc mjdk je </p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+											<div style="background-color: rgb(9, 12, 31);" id="orderdeux">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">SODINYESSI paul</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtesta()">Suprimer cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestb()">Ne plus recevoir
+																			cette notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestc()">Valider cette
+																			notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop">le benin sera donc mjdk je
+															drtey
+															bon mon cout bgt de la donne </p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+											<div style="background-color: rgb(9, 12, 31);" id="ordertrois">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">AGOUA inès</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtesttroisa()">Suprimer
+																			cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtesttroisb()">Ne plus
+																			recevoir cette notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop">touloiu mjdk je drtey bon
+															mon
+															cout bgt de la donne </p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+											<div style="background-color: rgb(9, 12, 31);" id="orderquatre">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">VIVI fifa</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestquatrea()">Suprimer
+																			cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestquatreb()">Ne plus
+																			recevoir cette notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop">Tout sera donc mjdk je drtey
+															bon
+															mon cout bgt de la donne </p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+											<div style="background-color: rgb(9, 12, 31);" id="ordercinq">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">HODO charles</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestcinqa()">Suprimer
+																			cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestcinqb()">Ne plus
+																			recevoir
+																			cette notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop">Tout sera donc mjdk je drtey
+															bon
+															mon cout bgt de la donne </p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+											<div style="background-color: rgb(9, 12, 31);" id="ordersix">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">AFAFA laurent</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestsixa()">Suprimer
+																			cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestsixb()">Ne plus
+																			recevoir
+																			cette notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop"> bon mon cout bgt de la
+															donne
+														</p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+											<div style="background-color: rgb(9, 12, 31);" id="ordersept">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">KAKPO antoine</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestsepta()">Suprimer
+																			cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtestseptb()">Ne plus
+																			recevoir
+																			cette notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop">Tout sera donc mjdk je drtey
+															bon
+															mon cout bgt de la donne </p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+											<div style="background-color: rgb(9, 12, 31);" id="orderhuit">
+												<div class="media active">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/girl.svg" alt="User Image"
+														style="margin-right: 10px;  padding-left: 7px;">
+													<div class="media-body" style="padding-bottom: 10px;">
+														<div style="display: inline-flex;">
+															<div class="col-6">
+																<h5 style="width: 100px;">SODINYESSI paul</h5>
+															</div>
+															<div class="col-4"></div>
+															<div class="col-2">
+																<div class="btn-group" style="margin-left: 25px;">
+																	<span class="chat-timing" data-toggle="dropdown"
+																		aria-haspopup="true" aria-expanded="false"><img
+																			src="assets/images/three-dots.svg" alt=""
+																			style="width: 18px; height: 18px;"></span>
+																	<div class="dropdown-menu">
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtesthuita()">Suprimer
+																			cette
+																			notification</a>
+																		<a class="dropdown-item"
+																			style="font-size: 13px;"
+																			onclick="validationtesthuitb()">Ne plus
+																			recevoir
+																			cette notification</a>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<p style="color: white;" id="popop">drtey bon mon cout bgt sera
+															donc
+															mjdk je de la donne </p>
+													</div>
+												</div>
+												<p style="font-size: 10px; margin-left: 265px;">02:30 pm</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!------------validationordonnance modale----------->
+								<div class="modal fade" id="validationordonnance" tabindex="-1" role="dialog"
+									aria-labelledby="validationordonnanceLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-body">
+												<div class="col-lg-12" data-aos="fade-up" data-aos-delay="100">
+													<div class="resume-item"
+														style="background-color: rgba(0, 0, 0, 0.1); border-radius: 5px; padding-left: 17px; padding-right: 17px;">
+														<img src="assets/images/logo-b-e-doto.png"
+															class="img-fluid" alt=""
+															style="width: 50px; height: 50px; margin-top: 5px; margin-bottom: 5px;">
+														<h4 style="display: inline-block;">L'ordonnance Médicale</h4>
+														<h5>Le 27 Décembre/04/2021</h5>
+														<div><strong>Les causes</strong></div>
+														<p> Vous avez une mauvaise qualité de sommeil qui retentit
+															 le lendemain sur vos activités  psychiques et une remontée de liquide 
+															 acide dans l'œsophage.</p>
+														<strong>Les Médicaments et ses Prescriptions</strong>
+														<ul>
+															<li><strong style="color: blue; cursor: pointer;">
+																	Amoxiciline:
+																</strong> 250 mg à 500 mg trois fois par jour ou 750 mg à 1 g<h5>Matin - Soir</h5>
+															</li>
+															<li><strong style="color: blue; cursor: pointer;">
+																l'oxazépam:
+																</strong> Prenez ce médicament par voie orale Votre dose devra 
+																peut-être être progressivement diminuée<h5>Matin -Midi- Soir</h5>
+															</li>
+															<li><strong style="color: blue; cursor: pointer;"> Maloxine :
+																</strong> Préner les trois comprimés les mêmes jours<h5>Matin - Soir</h5>
+															</li>
+															<li><strong style="color: blue; cursor: pointer;"> Malox:
+																</strong> Prénez un sachet<h5>Matin-Midi- Soir</h5>
+															</li>
+														</ul>
+														<div>
+															<p><mark><strong>Docteur:</strong> Abdoul ADDRA</mark></p>
+															<p style="padding-bottom: 15px; ">
+																<em>jfkfjflnkofkdfvvfv</em>
+															</p>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger"
+													data-dismiss="modal">Fermer</button>
+												<button type="button" class="btn btn-primary">Valider</button>
+												<a href="ticker1.html"> <button type="button"
+														class="btn btn-primary">Acheter</button></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!------------validationtest modale----------->
+								<div class="modal fade" id="validationtest" tabindex="-1" role="dialog"
+									aria-labelledby="validationtestLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-body">
+												<div class="portfolio-info" style="margin-right: 10px;">
+													<h3 style="text-align: center;">Examen du sang</h3>
+													<ul style="margin-left: 15px;">
+														<li><strong>Nom du Docteur</strong>: Web design</li>
+														<li><strong>Hopital</strong>: ASU Company</li>
+														<li><strong>La Date</strong>: 01 March, 2020</li>
+														<li><strong>L'heure</strong>: <a href="#">www.example.com</a>
+														</li>
+														<li><strong>Le Résultat: </strong>
+															<p style="text-align: justify; margin-right: 5px;">
+																Repudiandae
+																et iusto quae reiciendis et quis Eius
+																vel ratione eius unde vitae rerum voluptates
+																asperiores voluptatem Earum molestiae consequatur neque
+																etlon sader mart dila
+																asperiores voluptatem Earum molestiae consequatur neque
+																etlon sader mart dila</p>
+														</li>
+														<li><strong>Les fichiers: </strong></li>
+
+														<div class="chat-user-body">
+															<div class="user-media" style="display: block;">
+																<div class="user-media-slider" id="fichiertest">
+																	<div class="user-media-slider-item"
+																		style="margin-right: 10px;">
+																		<img id="myImg" src="assets/images/media_01.png"
+																			class="" alt="user-media">
+																	</div>
+																	<div class="user-media-slider-item"
+																		style="margin-right: 10px;">
+																		<img id="myImg1"
+																			src="../../chat-version/component/assets/images/media_02.png"
+																			class="" alt="user-media">
+																	</div>
+																	<div class="user-media-slider-item"
+																		style="margin-right: 10px;">
+																		<img id="myImg2"
+																			src="../../chat-version/component/assets/images/media_03.png"
+																			class="" alt="user-media">
+																	</div>
+																	<div class="user-media-slider-item"
+																		style="margin-right: 10px;">
+																		<img id="myImg3"
+																			src="../../chat-version/component/assets/images/media_04.png"
+																			class="" alt="user-media">
+																	</div>
+																	<div class="user-media-slider-item"
+																		style="margin-right: 10px;">
+																		<img id="myImg4"
+																			src="../../chat-version/component/assets/images/pdf.svg"
+																			class="" alt="user-media">
+																	</div>
+																	<div class="user-media-slider-item"
+																		style="margin-right: 10px;">
+																		<img id="myImg5"
+																			src="../../chat-version/component/assets/images/xls.svg"
+																			class="" alt="user-media">
+																	</div>
+																	<div class="user-media-slider-item">
+																		<img id="myImg6"
+																			src="../../chat-version/component/assets/images/doc.svg"
+																			class="" alt="user-media">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</ul>
+													<div id="myModal" class="modal">
+														<span class="close">&times;</span>
+														<img class="modal-content" id="img01">
+														<div id="caption"></div>
+													</div>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger"
+													data-dismiss="modal">Fermer</button>
+												<button type="button" class="btn btn-primary">Valider</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!---à-ç)*$^p^$^r)oroiocookokbofolkfofclolldlfott-->
+								<div class="chat-left-search">
+									<form>
+										<div class="input-group">
+											<input type="search" class="form-control" placeholder="Search"
+												aria-label="Search" aria-describedby="chat-left-search-btn">
+											<div class="input-group-append">
+												<button class="btn" type="submit" id="chat-left-search-btn"><img
+														src="assets/images/search.svg"
+														alt="Generic placeholder image"></button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="chat-left-body" style="padding-bottom: 110px;">
+									<div class="nav flex-column nav-pills chat-userlist" id="chat-list-tab"
+										role="tablist" aria-orientation="vertical">
+										<a class="nav-link active" id="chat-first-tab" data-toggle="pill"
+											href="#chat-first" role="tab" aria-controls="chat-first"
+											aria-selected="true">
+											<div class="media active">
+												<div class="user-status"></div>
+												<img class="align-self-center rounded-circle"
+													src="assets/images/girl.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Emily Cook<span class="chat-timing">02:30 pm</span></h5>
+													<p>Waiting for module 1 to finish...</p>
+												</div>
+											</div>
+										</a>
+										<!--
+										<a class="nav-link" id="chat-second-tab" data-toggle="pill" href="#chat-second"
+											role="tab" aria-controls="chat-second" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/boy.svg" alt="User Image">
+												<div class="media-body">
+													<h5>James Simeron<span class="chat-timing">Today</span></h5>
+													<p>Send your CV for more info...</p>
+												</div>
+											</div>
+										</a>-->
+										<a class="nav-link" id="chat-third-tab" data-toggle="pill" href="#chat-third"
+											role="tab" aria-controls="chat-third" aria-selected="false">
+											<div class="media">
+												<div class="user-status status-offline"></div>
+												<img class="align-self-center rounded-circle"
+													src="assets/images/men.svg" alt="User Image">
+												<div class="media-body">
+													<h5 id="notif">Lauren Gotlib<span
+															class="badge badge-primary ml-2">5</span><span
+															class="chat-timing">Oct 08</span></h5>
+													<p>Hi</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-fourth-tab" data-toggle="pill" href="#chat-fourth"
+											role="tab" aria-controls="chat-fourth" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/women.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Nebraska Oshivo<span class="chat-timing">Sep 25</span></h5>
+													<p>Could you please send PDF?</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-fifth-tab" data-toggle="pill" href="#chat-fifth"
+											role="tab" aria-controls="chat-fifth" aria-selected="false">
+											<div class="media">
+												<div class="user-status status-away"></div>
+												<img class="align-self-center rounded-circle"
+													src="assets/images/girl.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Noir Ajkeban<span class="badge badge-primary ml-2">8</span>
+														<span class="chat-timing">Sep 10</span></h5>
+													<p>See you at the Lunch...</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-sixth-tab" data-toggle="pill" href="#chat-sixth"
+											role="tab" aria-controls="chat-sixth" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/boy.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Will Patinson<span class="chat-timing">Sep 08</span></h5>
+													<p>Where have you been?</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-seventh-tab" data-toggle="pill"
+											href="#chat-seventh" role="tab" aria-controls="chat-seventh"
+											aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/girl.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Simran Kaur<span class="badge badge-primary ml-2">3</span> <span
+															class="chat-timing">Sep 07</span></h5>
+													<p>I sent app proposal to you.</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-eighth-tab" data-toggle="pill" href="#chat-eighth"
+											role="tab" aria-controls="chat-eighth" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/women.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Courtney Cox<span class="chat-timing">Sep 05</span></h5>
+													<p>Please, revert on issues.</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-ninth-tab" data-toggle="pill" href="#chat-ninth"
+											role="tab" aria-controls="chat-ninth" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/men.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Andrew Garfield<span class="chat-timing">Aug 25</span></h5>
+													<p>Your presence is awaited...</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-tenth-tab" data-toggle="pill" href="#chat-tenth"
+											role="tab" aria-controls="chat-tenth" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/girl.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Rose Witherspoon<span class="chat-timing">Aug 18</span></h5>
+													<p>Fanfest is coming...</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-eleventh-tab" data-toggle="pill"
+											href="#chat-eleventh" role="tab" aria-controls="chat-eleventh"
+											aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/women.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Seema Roy<span class="chat-timing">Aug 11</span></h5>
+													<p>Bye. Tc...</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-twelth-tab" data-toggle="pill" href="#chat-twelth"
+											role="tab" aria-controls="chat-twelth" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/boy.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Anand Kumar<span class="badge badge-primary ml-2">2</span> <span
+															class="chat-timing">Aug 03</span></h5>
+													<p>I see</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-thirteenth-tab" data-toggle="pill"
+											href="#chat-thirteenth" role="tab" aria-controls="chat-thirteenth"
+											aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/men.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Vladimir Jeir<span class="chat-timing">Jul 28</span></h5>
+													<p>When are you coming home?</p>
+												</div>
+											</div>
+										</a>
+										<a class="nav-link" id="chat-fourtinth-tab" data-toggle="pill"
+											href="#chat-fourtinth" role="tab" aria-controls="chat-fourtinth"
+											aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle"
+													src="assets/images/girl.svg" alt="User Image">
+												<div class="media-body">
+													<h5>Jessica Meir<span class="chat-timing">Jul 21</span></h5>
+													<p>Hmmmm</p>
+												</div>
+											</div>
+										</a>
+									</div>
+								</div>
+						</div>
+					</div>
+					<!-- End Chat Listbar -->
+
+					<!-- Start Chat Profilebar -->
+					<div class="tab-pane fade" id="pills-profile-justified" role="tabpanel"
+						aria-labelledby="pills-profile-tab-justified">
+						<div class="chat-profilebar">
+							<div class="chat-left-headbar">
+								<div class="row align-items-center">
+									<div class="col-8">
+										<ul class="list-unstyled mb-0">
+											<li class="media">
+												<img class="align-self-center mr-2" src="assets/images/men1.png"
+													alt="Generic placeholder image"
+													style="width: 44px; height: 44px; border-radius: 100%;">
+												<div class="media-body">
+													<h5 class="mb-0 mt-2">Profile</h5>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-4">
+										<div class="dropdown">
+											<a href="#" data-toggle="modal" data-target="#createGrouppatiento"
+												title="créer un groupe"><img src="assets/images/more-verticale.svg"
+													alt="Generic placeholder image"></a>
+											<a href="#" id="settingDropdown" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false"> <img src="assets/images/more-scanner-qr-code.svg"
+													alt="Generic placeholder image" style="margin-right: 20px;">
+												<div class="dropdown-menu dropdown-menu-right"
+													aria-labelledby="settingDropdown">
+													<a class="dropdown-item font-14" data-toggle="modal"
+														data-target="#scanner-qr-code" href="#">Scanner DIMU</a>
+
+													<a class="dropdown-item font-14" href="saisirImu.html">Saisir le
+														code
+														DIMU</a>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---modale create group--->
+							<!-- Start Create Group Modal -->
+							<div class="modal create-group-modal fade" id="createGrouppatiento" tabindex="-1"
+								role="dialog" aria-labelledby="createGroupTitle" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-centered" role="document">
+									<div class="modal-content">
+										<div class="modal-header">
+											<h5 class="modal-title" id="createGroupTitle">Créer un groupe</h5>
+										</div>
+										<div class="modal-body">
+											<form>
+												<div class="form-group">
+													<input type="text" class="form-control" id="groupName"
+														placeholder="Enter Group Name">
+												</div>
+												<div class="form-group">
+													<textarea class="form-control" name="groupDesc" id="groupDesc"
+														rows="3" placeholder="Enter Group Description"></textarea>
+												</div>
+												<p class="create-group-header">Ajouter un Utilisateur</p>
+												<div class="added-users">
+													<div class="avatar-group">
+														<div class="avatar">
+															<a href="#" data-toggle="tooltip" data-placement="top"
+																title="" data-original-title="Emily Cook">
+																<img src="assets/images/girl.svg" alt="avatar"
+																	class="rounded-circle">
+															</a>
+														</div>
+														<div class="avatar">
+															<a href="#" data-toggle="tooltip" data-placement="top"
+																title="" data-original-title="Lauren Gotlib">
+																<img src="assets/images/men.svg" alt="avatar"
+																	class="rounded-circle">
+															</a>
+														</div>
+														<div class="avatar">
+															<a href="#" data-toggle="tooltip" data-placement="top"
+																title="" data-original-title="Noir Ajkeban">
+																<img src="assets/images/women.svg" alt="avatar"
+																	class="rounded-circle">
+															</a>
+														</div>
+														<div class="avatar">
+															<a href="#" data-toggle="tooltip" data-placement="top"
+																title="" data-original-title="Add New User">
+																<img src="assets/images/more-verticale.svg" alt="avatar"
+																	class="rounded-circle">
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="add-users-search">
+													<div class="input-group">
+														<input type="search" class="form-control" placeholder="Search"
+															aria-label="Search" aria-describedby="add-users-search-btn">
+														<div class="input-group-append">
+															<button class="btn" type="submit"
+																id="add-users-search-btn"><img
+																	src="assets/images/search.svg"
+																	alt="Generic placeholder image"></button>
+														</div>
+													</div>
+												</div>
+												<div class="add-users-list">
+													<ul class="list-unstyled">
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/girl.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5><span>Emily Cook</span></h5>
+																<p>Hey there. I am on Chalty.</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userfirstAdd" checked>
+																<label class="custom-control-label"
+																	for="userfirstAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/boy.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>James Simeron</h5>
+																<p>Work mode ON !!</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="usersecondAdd">
+																<label class="custom-control-label"
+																	for="usersecondAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/men.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Lauren Gotlib</h5>
+																<p>Let's go hiking.</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userthirdAdd" checked>
+																<label class="custom-control-label"
+																	for="userthirdAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/girl.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Nebraska Oshivo</h5>
+																<p>Why so serious ?</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userfourthAdd">
+																<label class="custom-control-label"
+																	for="userfourthAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/women.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Noir Ajkeban</h5>
+																<p> ** No Status **</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userfifthAdd" checked>
+																<label class="custom-control-label"
+																	for="userfifthAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/boy.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5><span>John Smith</span></h5>
+																<p>Hey there. I am on Chalty.</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userSixthAdd" checked>
+																<label class="custom-control-label"
+																	for="userSixthAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/girl.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Arya Thompson</h5>
+																<p>Work mode ON !!</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userSeventhdAdd">
+																<label class="custom-control-label"
+																	for="userSeventhdAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/men.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Mike Wright</h5>
+																<p>Let's go hiking.</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userEightAdd">
+																<label class="custom-control-label"
+																	for="userEightAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/boy.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Robert Pattinson</h5>
+																<p>Why so serious ?</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userNinthAdd">
+																<label class="custom-control-label"
+																	for="userNinthAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/women.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Seema Rao</h5>
+																<p> ** No Status **</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userTenthAdd">
+																<label class="custom-control-label"
+																	for="userTenthAdd"></label>
+															</div>
+														</li>
+														<li class="media">
+															<img class="align-self-center rounded-circle"
+																src="assets/images/girl.svg"
+																alt="Generic placeholder image">
+															<div class="media-body">
+																<h5>Noir Williamson</h5>
+																<p> ** No Status **</p>
+															</div>
+															<div class="custom-control custom-checkbox">
+																<input type="checkbox" class="custom-control-input"
+																	id="userEleventhAdd">
+																<label class="custom-control-label"
+																	for="userEleventhAdd"></label>
+															</div>
+														</li>
+													</ul>
+												</div>
+												<div class="mt-3 text-center">
+													<button type="submit" class="btn btn-primary" id="btn-primary"><img
+															src="assets/images/more-verticale.svg"
+															style="margin-right: 6px;" alt="avatar"
+															class="rounded-circle">Créer groupe</button>
+													<button class="btn btn-danger" id="btn-primaryquittergroup"
+														type="button" style=" margin-left: 7px;"
+														onclick="quitGroup()">Quitter</button>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chat-left-body">
+								<div class="profilebar">
+									<img class="profile-pic img-fluid" src="assets/images/men.svg" alt="profile-pic">
+									<div class="profile-edit">
+										<img src="assets/images/camera.svg" alt="Generic placeholder image"
+											class=" upload-button">
+										<input class="profile-upload" type="file" accept="image/*" />
+									</div>
+									<h5>SODINYESSI Gérard</h5>
+									<p class="mb-0">Cotnou, Bénin</p>
+								</div>
+								<div class="profile-detail" style="padding-bottom: 60px;">
+									<ul class="list-unstyled mb-0">
+										<li class="media">
+											<img src="assets/images/user.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+												<p>Nom</p>
+												<div class="input-group">
+													<input type="text" class="form-control" value="SODINYESSI"
+														aria-label="SODINYESSI"
+														aria-describedby="button-addon-group-username">
+													<div class="input-group-append">
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-username">Update</button>
+														<!------>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/user.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+												<p>Prénoms</p>
+												<div class="input-group">
+													<input type="text" class="form-control" value="Sènou Gérard"
+														aria-label="Sènou-Gérard"
+														aria-describedby="button-addon-group-username">
+													<div class="input-group-append">
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-username">Update</button>
+														<!------>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/map.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+												<p>Location</p>
+												<div class="input-group">
+													<input type="text" class="form-control" value="Cotnou, Bénin"
+														aria-label="Cotnou, Bénin"
+														aria-describedby="button-addon-group-location">
+													<div class="input-group-append">
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-location">Update</button>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/message-square.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+												<p>Status</p>
+												<div class="input-group">
+													<input type="text" class="form-control" value="Je suis developpeur"
+														aria-label="Je suis developpeur"
+														aria-describedby="button-addon-group-status">
+													<div class="input-group-append">
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-status">Update</button>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/email.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+												<p>Email ID</p>
+												<div class="input-group">
+													<input type="email" class="form-control"
+														value="sodinyessigerard@gmail.com"
+														aria-label="sodinyessigerard@gmail.com"
+														aria-describedby="button-addon-group-emailid">
+													<div class="input-group-append">
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-emailid">Update</button>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/lock.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+												<p>Password</p>
+												<div class="input-group">
+													<input type="password" class="form-control" value="********"
+														aria-label="********"
+														aria-describedby="button-addon-group-password">
+													<div class="input-group-append">
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-password">Update</button>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/folder-fill.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+
+												<div class="input-group">
+													<div class="input-group-append">
+														<a
+															href="../../../e-hospital/../e-hospital/examenDetail/detailTest/index.html">
+															<p>Dossiers</p>
+														</a>
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-password"
+															style="margin-left: 160px;"><a href="#" data-toggle="modal"
+																data-target="#createGroup">Update</a></button>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/hospital-1_icon-icons.com_66068.svg" alt=""
+												style="width: 24px; height: 24px;">
+											<div class="media-body">
+												<div class="input-group">
+													<div class="input-group-append">
+														<a href="ticker1.html"><button class="btn btn-link"
+																type="button" id="button-addon-group-password">
+																<h6 style="margin-left: 7px;">Les Pharmacies</h6>
+															</button></a>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="media">
+											<img src="assets/images/folder-fill.svg" alt="Generic placeholder image"
+												class=" align-self-center mr-3">
+											<div class="media-body">
+												<div class="input-group">
+													<div class="input-group-append">
+														<button class="btn btn-link" type="button"
+															id="button-addon-group-password"><a
+																href="../../../e-hospital/../e-hospital/index.html">
+																<h6> Visiter la communauté e-hospital</h6>
+															</a></button>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Chat Profilebar -->
+					<!-- Start Chat Settingbar -->
+					<div class="tab-pane fade" id="pills-setting-justified" role="tabpanel"
+						aria-labelledby="pills-setting-tab-justified">
+						<div class="chat-settingbar">
+							<div class="chat-left-headbar">
+								<div class="row align-items-center">
+									<div class="col-8">
+										<ul class="list-unstyled mb-0">
+											<li class="media">
+												<img class="align-self-center mr-2" src="assets/images/men1.png"
+													alt="Generic placeholder image"
+													style="width: 44px; height: 44px; border-radius: 100%;">
+												<div class="media-body">
+													<h5 class="mb-0 mt-2">Paramètres</h5>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="col-4">
+										<div class="dropdown">
+											<a href="#" id="settingDropdown" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false"> <img src="assets/images/more-verticale.svg"
+													alt="Generic placeholder image">
+												<div class="dropdown-menu dropdown-menu-right"
+													aria-labelledby="settingDropdown">
+													<a class="dropdown-item font-14" href="#">Reset to Defaults</a>
+													<a class="dropdown-item font-14" href="#">Backup</a>
+												</div>
+										</div>
+										<div class="dropdown">
+											<a href="#" id="settingDropdown" data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false"> <img src="assets/images/more-scanner-qr-code.svg"
+													alt="Generic placeholder image" style="margin-right: 20px;">
+												<div class="dropdown-menu dropdown-menu-right"
+													aria-labelledby="settingDropdown">
+													<a class="dropdown-item font-14" data-toggle="modal"
+														data-target="#scanner-qr-code" href="#">Scanner IMC</a>
+
+													<a class="dropdown-item font-14" href="saisirImu.html">Saisir
+														IMC</a>
+												</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="chat-left-body" style="padding-bottom: 60px;">
+								<p class="setting-header">Paramètres généraux</p>
+								<div class="general-setting">
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Sons de notification</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input"
+													id="notificationSound" checked>
+												<label class="custom-control-label" for="notificationSound"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Alertes de nouveaux messages</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input"
+													id="newMessageAlerts">
+												<label class="custom-control-label" for="newMessageAlerts"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Afficher les mini-messages dans la barre latérale</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-checkbox">
+												<input type="checkbox" class="custom-control-input"
+													id="showMiniMessages">
+												<label class="custom-control-label" for="showMiniMessages"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="setting-header">Paramètres de confidentialité</p>
+								<div class="privacy-setting">
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Lire les reçus</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="readReceipts"
+													checked>
+												<label class="custom-control-label" for="readReceipts"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Afficher la photo de profil</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input"
+													id="showProfilePicture">
+												<label class="custom-control-label" for="showProfilePicture"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Autoriser les messages des inconnus</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input"
+													id="allowMessageToStrangers">
+												<label class="custom-control-label"
+													for="allowMessageToStrangers"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="setting-header">DIMU Paramètre</p>
+								<div class="privacy-setting">
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Autoriser à votre Docteur</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input"
+													id="readReceiptsDocteur" checked>
+												<label class="custom-control-label" for="readReceiptsDocteur"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Autoriser à votre famille</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input"
+													id="showProfilePicturefamille">
+												<label class="custom-control-label"
+													for="showProfilePicturefamille"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Autoriser vos données à votre famille</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input"
+													id="allowMessageToStrangersdonnées">
+												<label class="custom-control-label"
+													for="allowMessageToStrangersdonnées"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<p class="setting-header">Paramètres du bracelet</p>
+								<div class="privacy-setting">
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Recevoir les alertes</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input"
+													id="readReceiptsalertes" checked>
+												<label class="custom-control-label" for="readReceiptsalertes"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">connexion automatique</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input" id="automatique">
+												<label class="custom-control-label" for="automatique"></label>
+											</div>
+										</div>
+									</div>
+									<div class="row align-items-center pb-3">
+										<div class="col-9">
+											<h6 class="mb-0">Sous autorisation</h6>
+										</div>
+										<div class="col-3 text-right">
+											<div class="custom-control custom-switch">
+												<input type="checkbox" class="custom-control-input"
+													id="allowMessageToStrangersSous">
+												<label class="custom-control-label"
+													for="allowMessageToStrangersSous"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Chat Settingbar -->
+				</div>
+				<div class="chat-menu">
+					<ul class="nav nav-pills nav-justified mb-0" id="pills-tab-justified" role="tablist">
+						<li class="nav-item">
+							<a class="nav-link active" id="pills-addchat-tab-justified" data-toggle="pill"
+								href="#pills-addchat-justified" role="tab" aria-controls="pills-addchat-justified"
+								aria-selected="true"><img src="assets/images/badgeo1.svg"
+									alt="Generic placeholder image" style="font-size: 24px; color:red; "></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pills-chat-tab-justified" data-toggle="pill"
+								href="#pills-chat-justified" role="tab" aria-controls="pills-chat-justified"
+								aria-selected="false"><img src="assets/images/girlamessage.svg"
+									alt="Generic placeholder image" style="font-size: 24px; color:red; "></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pills-profile-tab-justified" data-toggle="pill"
+								href="#pills-profile-justified" role="tab" aria-controls="pills-profile-justified"
+								aria-selected="false"> <img src="assets/images/girla.svg"
+									alt="Generic placeholder image" style="font-size: 24px; color:red; "></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" id="pills-setting-tab-justified" data-toggle="pill"
+								href="#pills-setting-justified" role="tab" aria-controls="pills-setting-justified"
+								aria-selected="false"><img src="assets/images/girlasettings.svg"
+									alt="Generic placeholder image" style="font-size: 24px; color:red;"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- End Chat Leftbar -->
+			<!-- Start Chat Rightbar -->
+			<div class="chat-rightbar">
+				<!-- Start Chat Detail -->
+				<div class="chat-detail">
+					<div class="chat-head">
+						<div class="row align-items-center">
+							<div class="col-5">
+								<ul class="list-unstyled mb-0">
+									<li class="media">
+										<div class="user-status"></div>
+										<img class="align-self-center rounded-circle" src="assets/images/girl.svg"
+											alt="Generic placeholder image">
+										<div class="media-body">
+											<h5>Abdoul Sanni</h5>
+											<p class="mb-0">en ligne</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-7">
+								<ul class="list-inline float-right mb-0">
+									<li class="list-inline-item">
+										<a href="#" data-toggle="modal" data-target="#incomingVoiceCall"> <img
+												class="align-self-center rounded-circle" src="assets/images/phone.svg"
+												alt="Generic placeholder image"
+												style="color: #f82249; width: 16px; height: 30px; margin-bottom: 10px;"></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" data-toggle="modal" data-target="#incomingVideoCall"><i
+												class="material-icons" style="color: #f82249; ">videocam</i></a>
+									</li>
+									<li class="list-inline-item">
+										<div class="dropdown">
+											<a href="#" class="" id="chatDropdown" data-toggle="dropdown"
+												aria-haspopup="true" aria-expanded="false"> <img
+													class="align-self-center rounded-circle"
+													src="assets/images/more-hori.svg" alt="Generic placeholder image"
+													style="color: #f82249; width: 20px; margin-bottom: 13px;"></a>
+											<div class="dropdown-menu dropdown-menu-right"
+												aria-labelledby="chatDropdown">
+												<a class="dropdown-item font-14" href="#" id="view-user-info">Docteur
+													info</a>
+												<a class="dropdown-item font-14" id="chat-second-tab" data-toggle="pill"
+													href="#chat-second" role="tab" aria-controls="chat-second"
+													aria-selected="false">Commenter votre Docteur</a>
+												<a class="dropdown-item font-14" href="#">Exporter le Chat</a>
+												<a class="dropdown-item font-14" href="#">Effacer Message</a>
+											</div>
+										</div>
+									</li>
+									<li>
+										<a href="#" class="back-arrow"><img src="assets/images/delelta.svg" alt=""
+												style="height: 27px; width: 27px; margin-bottom: 13px;"></a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div class="chat-body" style="padding-bottom: 200px;">
+						<div class="tab-content" id="chat-listContent">
+							<div class="tab-pane fade show active" id="chat-first" role="tabpanel"
+								aria-labelledby="chat-first-tab">
+								<div class="chat-day text-center mb-3">
+									<span class="badge badge-secondary-inverse" id="taday">Today</span>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Hello! please, let me know the status about project after school.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:18 pm<i class="fa fa-check"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>I have completed 4 stages 5 stages remaining.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:20 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Let me share video for detailed information</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:22 pm<i class="fa fa-check"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<div class="message-video">
+											<video width="210" controls>
+												<source src="assets/images/video.mp4" type="video/mp4">
+											</video>
+										</div>
+										<span>Demo.mp4</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:25 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Thanks for the video.</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>I am sharing images of project work done so far. <br />Please, have a look
+											at
+											images and let me know if changes required.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:30 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Could you share photos, please?</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:31 pm<i class="fa fa-check ml-2"></i></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<ul class="list-inline message-media">
+											<li class="list-inline-item">
+												<img src="assets/images/media_01.png" class="img-fluid" alt="media">
+											</li>
+											<li class="list-inline-item">
+												<img src="assets/images/media_02.png" class="img-fluid" alt="media">
+											</li>
+											<li class="list-inline-item">
+												<p class="media-more">+07</p>
+											</li>
+										</ul>
+										<span>Photos of product</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:32 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>I request you to schedule demo at 3 pm after 2 days for the better
+											progress.
+											<br />After that we are discussion of final confirmation this
+											project.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<div class="message-audio">
+											<audio controls>
+												<source src="assets/images/audio.mp3" type="audio/mpeg">
+											</audio>
+										</div>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:38 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<ul class="list-unstyled message-document">
+											<li class="media">
+												<img class="align-self-center img-fluid mr-2"
+													src="assets/images/pdf.svg" alt="pdf">
+												<div class="media-body">
+													<h5><a href="#">Document.pdf</a></h5>
+													<p>50kb</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:40 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Please, refer this doc file for documentation.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:41 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Sure, I will prepare for the same.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:43 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Great. Thanks</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:45 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<span id="monTextEnvoieRDV"></span>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-second" role="tabpanel"
+								aria-labelledby="chat-second-tab">
+								<div class="empty-screen">
+									<div class="container" id="leCommentairedepatient">
+										<div class="feedback">
+											<div class="rating">
+												<input type="radio" name="rating" id="rating-5">
+												<label for="rating-5"></label>
+												<input type="radio" name="rating" id="rating-4">
+												<label for="rating-4"></label>
+												<input type="radio" name="rating" id="rating-3">
+												<label for="rating-3"></label>
+												<input type="radio" name="rating" id="rating-2">
+												<label for="rating-2"></label>
+												<input type="radio" name="rating" id="rating-1">
+												<label for="rating-1"></label>
+												<div class="emoji-wrapper">
+													<div class="emoji">
+														<svg class="rating-0" xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 512 512">
+															<circle cx="256" cy="256" r="256" fill="#ffd93b" />
+															<path
+																d="M512 256c0 141.44-114.64 256-256 256-80.48 0-152.32-37.12-199.28-95.28 43.92 35.52 99.84 56.72 160.72 56.72 141.36 0 256-114.56 256-256 0-60.88-21.2-116.8-56.72-160.72C474.8 103.68 512 175.52 512 256z"
+																fill="#f4c534" />
+															<ellipse
+																transform="scale(-1) rotate(31.21 715.433 -595.455)"
+																cx="166.318" cy="199.829" rx="56.146" ry="56.13"
+																fill="#fff" />
+															<ellipse transform="rotate(-148.804 180.87 175.82)"
+																cx="180.871" cy="175.822" rx="28.048" ry="28.08"
+																fill="#3e4347" />
+															<ellipse transform="rotate(-113.778 194.434 165.995)"
+																cx="194.433" cy="165.993" rx="8.016" ry="5.296"
+																fill="#5a5f63" />
+															<ellipse
+																transform="scale(-1) rotate(31.21 715.397 -1237.664)"
+																cx="345.695" cy="199.819" rx="56.146" ry="56.13"
+																fill="#fff" />
+															<ellipse transform="rotate(-148.804 360.25 175.837)"
+																cx="360.252" cy="175.84" rx="28.048" ry="28.08"
+																fill="#3e4347" />
+															<ellipse
+																transform="scale(-1) rotate(66.227 254.508 -573.138)"
+																cx="373.794" cy="165.987" rx="8.016" ry="5.296"
+																fill="#5a5f63" />
+															<path
+																d="M370.56 344.4c0 7.696-6.224 13.92-13.92 13.92H155.36c-7.616 0-13.92-6.224-13.92-13.92s6.304-13.92 13.92-13.92h201.296c7.696.016 13.904 6.224 13.904 13.92z"
+																fill="#3e4347" />
+														</svg>
+														<svg class="rating-1" xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 512 512">
+															<circle cx="256" cy="256" r="256" fill="#ffd93b" />
+															<path
+																d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z"
+																fill="#f4c534" />
+															<path
+																d="M328.4 428a92.8 92.8 0 0 0-145-.1 6.8 6.8 0 0 1-12-5.8 86.6 86.6 0 0 1 84.5-69 86.6 86.6 0 0 1 84.7 69.8c1.3 6.9-7.7 10.6-12.2 5.1z"
+																fill="#3e4347" />
+															<path
+																d="M269.2 222.3c5.3 62.8 52 113.9 104.8 113.9 52.3 0 90.8-51.1 85.6-113.9-2-25-10.8-47.9-23.7-66.7-4.1-6.1-12.2-8-18.5-4.2a111.8 111.8 0 0 1-60.1 16.2c-22.8 0-42.1-5.6-57.8-14.8-6.8-4-15.4-1.5-18.9 5.4-9 18.2-13.2 40.3-11.4 64.1z"
+																fill="#f4c534" />
+															<path
+																d="M357 189.5c25.8 0 47-7.1 63.7-18.7 10 14.6 17 32.1 18.7 51.6 4 49.6-26.1 89.7-67.5 89.7-41.6 0-78.4-40.1-82.5-89.7A95 95 0 0 1 298 174c16 9.7 35.6 15.5 59 15.5z"
+																fill="#fff" />
+															<path
+																d="M396.2 246.1a38.5 38.5 0 0 1-38.7 38.6 38.5 38.5 0 0 1-38.6-38.6 38.6 38.6 0 1 1 77.3 0z"
+																fill="#3e4347" />
+															<path
+																d="M380.4 241.1c-3.2 3.2-9.9 1.7-14.9-3.2-4.8-4.8-6.2-11.5-3-14.7 3.3-3.4 10-2 14.9 2.9 4.9 5 6.4 11.7 3 15z"
+																fill="#fff" />
+															<path
+																d="M242.8 222.3c-5.3 62.8-52 113.9-104.8 113.9-52.3 0-90.8-51.1-85.6-113.9 2-25 10.8-47.9 23.7-66.7 4.1-6.1 12.2-8 18.5-4.2 16.2 10.1 36.2 16.2 60.1 16.2 22.8 0 42.1-5.6 57.8-14.8 6.8-4 15.4-1.5 18.9 5.4 9 18.2 13.2 40.3 11.4 64.1z"
+																fill="#f4c534" />
+															<path
+																d="M155 189.5c-25.8 0-47-7.1-63.7-18.7-10 14.6-17 32.1-18.7 51.6-4 49.6 26.1 89.7 67.5 89.7 41.6 0 78.4-40.1 82.5-89.7A95 95 0 0 0 214 174c-16 9.7-35.6 15.5-59 15.5z"
+																fill="#fff" />
+															<path
+																d="M115.8 246.1a38.5 38.5 0 0 0 38.7 38.6 38.5 38.5 0 0 0 38.6-38.6 38.6 38.6 0 1 0-77.3 0z"
+																fill="#3e4347" />
+															<path
+																d="M131.6 241.1c3.2 3.2 9.9 1.7 14.9-3.2 4.8-4.8 6.2-11.5 3-14.7-3.3-3.4-10-2-14.9 2.9-4.9 5-6.4 11.7-3 15z"
+																fill="#fff" />
+														</svg>
+														<svg class="rating-2" xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 512 512">
+															<circle cx="256" cy="256" r="256" fill="#ffd93b" />
+															<path
+																d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z"
+																fill="#f4c534" />
+															<path
+																d="M336.6 403.2c-6.5 8-16 10-25.5 5.2a117.6 117.6 0 0 0-110.2 0c-9.4 4.9-19 3.3-25.6-4.6-6.5-7.7-4.7-21.1 8.4-28 45.1-24 99.5-24 144.6 0 13 7 14.8 19.7 8.3 27.4z"
+																fill="#3e4347" />
+															<path
+																d="M276.6 244.3a79.3 79.3 0 1 1 158.8 0 79.5 79.5 0 1 1-158.8 0z"
+																fill="#fff" />
+															<circle cx="340" cy="260.4" r="36.2" fill="#3e4347" />
+															<g fill="#fff">
+																<ellipse transform="rotate(-135 326.4 246.6)" cx="326.4"
+																	cy="246.6" rx="6.5" ry="10" />
+																<path
+																	d="M231.9 244.3a79.3 79.3 0 1 0-158.8 0 79.5 79.5 0 1 0 158.8 0z" />
+															</g>
+															<circle cx="168.5" cy="260.4" r="36.2" fill="#3e4347" />
+															<ellipse transform="rotate(-135 182.1 246.7)" cx="182.1"
+																cy="246.7" rx="10" ry="6.5" fill="#fff" />
+														</svg>
+														<svg class="rating-3" xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 512 512">
+															<circle cx="256" cy="256" r="256" fill="#ffd93b" />
+															<path
+																d="M407.7 352.8a163.9 163.9 0 0 1-303.5 0c-2.3-5.5 1.5-12 7.5-13.2a780.8 780.8 0 0 1 288.4 0c6 1.2 9.9 7.7 7.6 13.2z"
+																fill="#3e4347" />
+															<path
+																d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z"
+																fill="#f4c534" />
+															<g fill="#fff">
+																<path
+																	d="M115.3 339c18.2 29.6 75.1 32.8 143.1 32.8 67.1 0 124.2-3.2 143.2-31.6l-1.5-.6a780.6 780.6 0 0 0-284.8-.6z" />
+																<ellipse cx="356.4" cy="205.3" rx="81.1" ry="81" />
+															</g>
+															<ellipse cx="356.4" cy="205.3" rx="44.2" ry="44.2"
+																fill="#3e4347" />
+															<g fill="#fff">
+																<ellipse transform="scale(-1) rotate(45 454 -906)"
+																	cx="375.3" cy="188.1" rx="12" ry="8.1" />
+																<ellipse cx="155.6" cy="205.3" rx="81.1" ry="81" />
+															</g>
+															<ellipse cx="155.6" cy="205.3" rx="44.2" ry="44.2"
+																fill="#3e4347" />
+															<ellipse transform="scale(-1) rotate(45 454 -421.3)"
+																cx="174.5" cy="188" rx="12" ry="8.1" fill="#fff" />
+														</svg>
+														<svg class="rating-4" xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 512 512">
+															<circle cx="256" cy="256" r="256" fill="#ffd93b" />
+															<path
+																d="M512 256A256 256 0 0 1 56.7 416.7a256 256 0 0 0 360-360c58.1 47 95.3 118.8 95.3 199.3z"
+																fill="#f4c534" />
+															<path
+																d="M232.3 201.3c0 49.2-74.3 94.2-74.3 94.2s-74.4-45-74.4-94.2a38 38 0 0 1 74.4-11.1 38 38 0 0 1 74.3 11.1z"
+																fill="#e24b4b" />
+															<path
+																d="M96.1 173.3a37.7 37.7 0 0 0-12.4 28c0 49.2 74.3 94.2 74.3 94.2C80.2 229.8 95.6 175.2 96 173.3z"
+																fill="#d03f3f" />
+															<path
+																d="M215.2 200c-3.6 3-9.8 1-13.8-4.1-4.2-5.2-4.6-11.5-1.2-14.1 3.6-2.8 9.7-.7 13.9 4.4 4 5.2 4.6 11.4 1.1 13.8z"
+																fill="#fff" />
+															<path
+																d="M428.4 201.3c0 49.2-74.4 94.2-74.4 94.2s-74.3-45-74.3-94.2a38 38 0 0 1 74.4-11.1 38 38 0 0 1 74.3 11.1z"
+																fill="#e24b4b" />
+															<path
+																d="M292.2 173.3a37.7 37.7 0 0 0-12.4 28c0 49.2 74.3 94.2 74.3 94.2-77.8-65.7-62.4-120.3-61.9-122.2z"
+																fill="#d03f3f" />
+															<path
+																d="M411.3 200c-3.6 3-9.8 1-13.8-4.1-4.2-5.2-4.6-11.5-1.2-14.1 3.6-2.8 9.7-.7 13.9 4.4 4 5.2 4.6 11.4 1.1 13.8z"
+																fill="#fff" />
+															<path
+																d="M381.7 374.1c-30.2 35.9-75.3 64.4-125.7 64.4s-95.4-28.5-125.8-64.2a17.6 17.6 0 0 1 16.5-28.7 627.7 627.7 0 0 0 218.7-.1c16.2-2.7 27 16.1 16.3 28.6z"
+																fill="#3e4347" />
+															<path
+																d="M256 438.5c25.7 0 50-7.5 71.7-19.5-9-33.7-40.7-43.3-62.6-31.7-29.7 15.8-62.8-4.7-75.6 34.3 20.3 10.4 42.8 17 66.5 17z"
+																fill="#e24b4b" />
+														</svg>
+														<svg class="rating-5" xmlns="http://www.w3.org/2000/svg"
+															viewBox="0 0 512 512">
+															<g fill="#ffd93b">
+																<circle cx="256" cy="256" r="256" />
+																<path
+																	d="M512 256A256 256 0 0 1 56.8 416.7a256 256 0 0 0 360-360c58 47 95.2 118.8 95.2 199.3z" />
+															</g>
+															<path
+																d="M512 99.4v165.1c0 11-8.9 19.9-19.7 19.9h-187c-13 0-23.5-10.5-23.5-23.5v-21.3c0-12.9-8.9-24.8-21.6-26.7-16.2-2.5-30 10-30 25.5V261c0 13-10.5 23.5-23.5 23.5h-187A19.7 19.7 0 0 1 0 264.7V99.4c0-10.9 8.8-19.7 19.7-19.7h472.6c10.8 0 19.7 8.7 19.7 19.7z"
+																fill="#e9eff4" />
+															<path
+																d="M204.6 138v88.2a23 23 0 0 1-23 23H58.2a23 23 0 0 1-23-23v-88.3a23 23 0 0 1 23-23h123.4a23 23 0 0 1 23 23z"
+																fill="#45cbea" />
+															<path
+																d="M476.9 138v88.2a23 23 0 0 1-23 23H330.3a23 23 0 0 1-23-23v-88.3a23 23 0 0 1 23-23h123.4a23 23 0 0 1 23 23z"
+																fill="#e84d88" />
+															<g fill="#38c0dc">
+																<path
+																	d="M95.2 114.9l-60 60v15.2l75.2-75.2zM123.3 114.9L35.1 203v23.2c0 1.8.3 3.7.7 5.4l116.8-116.7h-29.3z" />
+															</g>
+															<g fill="#d23f77">
+																<path
+																	d="M373.3 114.9l-66 66V196l81.3-81.2zM401.5 114.9l-94.1 94v17.3c0 3.5.8 6.8 2.2 9.8l121.1-121.1h-29.2z" />
+															</g>
+															<path
+																d="M329.5 395.2c0 44.7-33 81-73.4 81-40.7 0-73.5-36.3-73.5-81s32.8-81 73.5-81c40.5 0 73.4 36.3 73.4 81z"
+																fill="#3e4347" />
+															<path
+																d="M256 476.2a70 70 0 0 0 53.3-25.5 34.6 34.6 0 0 0-58-25 34.4 34.4 0 0 0-47.8 26 69.9 69.9 0 0 0 52.6 24.5z"
+																fill="#e24b4b" />
+															<path
+																d="M290.3 434.8c-1 3.4-5.8 5.2-11 3.9s-8.4-5.1-7.4-8.7c.8-3.3 5.7-5 10.7-3.8 5.1 1.4 8.5 5.3 7.7 8.6z"
+																fill="#fff" opacity=".2" />
+														</svg>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<a class="nav-link" id="chat-first-tab" data-toggle="pill" href="#chat-first"
+										role="tab" aria-controls="chat-first" aria-selected="true">
+										<button class="btn btn-danger">commenter</button></a>
+									<style>
+										* {
+											box-sizing: border-box;
+										}
+
+										#leCommentairedepatient {
+											display: flex;
+											flex-wrap: wrap;
+											height: 45vh;
+											align-items: center;
+											justify-content: center;
+											padding: 0 20px;
+										}
+
+										#leCommentairedepatient .rating {
+											display: flex;
+											width: 100%;
+											justify-content: center;
+											overflow: hidden;
+											flex-direction: row-reverse;
+											height: 150px;
+											position: relative;
+										}
+
+										#leCommentairedepatient .rating-0 {
+											filter: grayscale(100%);
+										}
+
+										#leCommentairedepatient .rating>input {
+											display: none;
+										}
+
+										#leCommentairedepatient .rating>label {
+											cursor: pointer;
+											width: 40px;
+											height: 40px;
+											margin-top: auto;
+											background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23e3e3e3' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+											background-repeat: no-repeat;
+											background-position: center;
+											background-size: 76%;
+											transition: .3s;
+										}
+
+										#leCommentairedepatient .rating>input:checked~label,
+										#leCommentairedepatient .rating>input:checked~label~label {
+											background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23fcd93a' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+										}
+
+
+										#leCommentairedepatient .rating>input:not(:checked)~label:hover,
+										#leCommentairedepatient .rating>input:not(:checked)~label:hover~label {
+											background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='126.729' height='126.73'%3e%3cpath fill='%23d8b11e' d='M121.215 44.212l-34.899-3.3c-2.2-.2-4.101-1.6-5-3.7l-12.5-30.3c-2-5-9.101-5-11.101 0l-12.4 30.3c-.8 2.1-2.8 3.5-5 3.7l-34.9 3.3c-5.2.5-7.3 7-3.4 10.5l26.3 23.1c1.7 1.5 2.4 3.7 1.9 5.9l-7.9 32.399c-1.2 5.101 4.3 9.3 8.9 6.601l29.1-17.101c1.9-1.1 4.2-1.1 6.1 0l29.101 17.101c4.6 2.699 10.1-1.4 8.899-6.601l-7.8-32.399c-.5-2.2.2-4.4 1.9-5.9l26.3-23.1c3.8-3.5 1.6-10-3.6-10.5z'/%3e%3c/svg%3e");
+										}
+
+										#leCommentairedepatient .emoji-wrapper {
+											width: 100%;
+											text-align: center;
+											height: 100px;
+											overflow: hidden;
+											position: absolute;
+											top: 0;
+											left: 0;
+										}
+
+										#leCommentairedepatient .emoji-wrapper:before,
+										#leCommentairedepatient .emoji-wrapper:after {
+											content: "";
+											height: 15px;
+											width: 100%;
+											position: absolute;
+											left: 0;
+											z-index: 1;
+										}
+
+										#leCommentairedepatient .emoji-wrapper:before {
+											top: 0;
+											background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%);
+										}
+
+										#leCommentairedepatient .emoji-wrapper:after {
+											bottom: 0;
+											background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(255, 255, 255, 0) 100%);
+										}
+
+										#leCommentairedepatient .emoji {
+											display: flex;
+											flex-direction: column;
+											align-items: center;
+											transition: .3s;
+										}
+
+										#leCommentairedepatient .emoji>svg {
+											margin: 15px 0;
+											width: 70px;
+											height: 70px;
+											flex-shrink: 0;
+										}
+
+										#leCommentairedepatient #rating-1:checked~.emoji-wrapper>.emoji {
+											transform: translateY(-100px);
+										}
+
+										#rating-2:checked~.emoji-wrapper>.emoji {
+											transform: translateY(-200px);
+										}
+
+										#rating-3:checked~.emoji-wrapper>.emoji {
+											transform: translateY(-300px);
+										}
+
+										#rating-4:checked~.emoji-wrapper>.emoji {
+											transform: translateY(-400px);
+										}
+
+										#rating-5:checked~.emoji-wrapper>.emoji {
+											transform: translateY(-500px);
+										}
+
+										.feedback {
+											max-width: 360px;
+											background-color: #fff;
+											width: 100%;
+											padding: 30px;
+											border-radius: 8px;
+											display: flex;
+											flex-direction: column;
+											flex-wrap: wrap;
+											align-items: center;
+											box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+										}
+									</style>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-third" role="tabpanel" aria-labelledby="chat-third-tab">
+								<div class="chat-day text-center mb-3">
+									<span class="badge badge-secondary-inverse">Today</span>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Hello! I got 95% in Semester 7</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:18 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Yay !!!</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:20 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Wow! That's great news. Where's the party?</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:22 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<ul class="list-unstyled message-document">
+											<li class="media">
+												<img class="align-self-center img-fluid mr-2"
+													src="assets/images/pdf.svg" alt="pdf">
+												<div class="media-body">
+													<h5><a href="#">Results.pdf</a></h5>
+													<p>50kb</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:40 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Thanks I will check and get back.</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Wow!! great continuity.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:30 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Thank you for your nice words.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:31 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Continue process of improving everyday. <br />I will be there this weekend
+											for
+											further guidance.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm</span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-fourth" role="tabpanel"
+								aria-labelledby="chat-fourth-tab">
+								<div class="empty-screen">
+									<img src="assets/images/empty-logo.png" class="img-fluid" alt="empty-logo">
+									<h4 class="my-3">No Conversation Yet.</h4>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-fifth" role="tabpanel" aria-labelledby="chat-fifth-tab">
+								<div class="chat-day text-center mb-3">
+									<span class="badge badge-secondary-inverse">Today</span>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Hi</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:18 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Hello</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:20 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>How was your day going?</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:22 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<div class="message-video">
+											<video width="210" controls>
+												<source src="assets/images/video.mp4" type="video/mp4">
+											</video>
+										</div>
+										<span>partytime.mp4</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:25 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Seems you are enjoying too much in Las Vegas.</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Be Responsible. <br />Don't drink and drive. Take the taxi for
+											home.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:30 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>I never drink and drive, ma!!!</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:31 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Send me photos of your hotelview as well.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:31 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<ul class="list-inline message-media">
+											<li class="list-inline-item">
+												<img src="assets/images/media_01.png" class="img-fluid" alt="media">
+											</li>
+											<li class="list-inline-item">
+												<img src="assets/images/media_02.png" class="img-fluid" alt="media">
+											</li>
+											<li class="list-inline-item">
+												<p class="media-more">+07</p>
+											</li>
+										</ul>
+										<span>Photos of Nevada Trip</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:32 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Wow. That seems so much fun.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Wish, could you be there also.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:41 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>gotta go. See you soon. Take Care</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:43 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>You too. Have Fun.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:45 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-sixth" role="tabpanel" aria-labelledby="chat-sixth-tab">
+								<div class="empty-screen">
+									<img src="assets/images/empty-logo.png" class="img-fluid" alt="empty-logo">
+									<h4 class="my-3">No Conversation Yet.</h4>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-seventh" role="tabpanel"
+								aria-labelledby="chat-seventh-tab">
+								<div class="chat-day text-center mb-3">
+									<span class="badge badge-secondary-inverse">Today</span>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>I love you</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:18 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Lol</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:20 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>I need you in my life</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:22 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>lol</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>you are my everything. love you so much</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:30 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>LOL</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:31 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>iPhone X or iPhone XR</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>iPhone X</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Lol</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Are you going to buy me that phone?</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>lol</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Please, tell me yes</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>LOL</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Why are so many lol</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>It's thunder from zambia fire.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:33 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-eighth" role="tabpanel"
+								aria-labelledby="chat-eighth-tab">
+								<div class="empty-screen">
+									<img src="assets/images/empty-logo.png" class="img-fluid" alt="empty-logo">
+									<h4 class="my-3">No Conversation Yet.</h4>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-ninth" role="tabpanel" aria-labelledby="chat-ninth-tab">
+								<div class="chat-day text-center mb-3">
+									<span class="badge badge-secondary-inverse">Today</span>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>How you doin???</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:18 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>I watched F.R.I.E.N.D.S. compeletely.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:20 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Let's go party then</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:22 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Duh !!! Next time</span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-tenth" role="tabpanel" aria-labelledby="chat-tenth-tab">
+								<div class="empty-screen">
+									<img src="assets/images/empty-logo.png" class="img-fluid" alt="empty-logo">
+									<h4 class="my-3">No Conversation Yet.</h4>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-eleventh" role="tabpanel"
+								aria-labelledby="chat-eleventh-tab">
+								<div class="chat-day text-center mb-3">
+									<span class="badge badge-secondary-inverse">Today</span>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Please, pay $100 to megan. I will give it to you when home.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:18 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Okay given. Now you owe me $110.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:20 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Why 10$ Extra?</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:22 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Convenience Charge it is.</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>I am not gonna pay any damn charges.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:31 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-twelth" role="tabpanel"
+								aria-labelledby="chat-twelth-tab">
+								<div class="empty-screen">
+									<img src="assets/images/empty-logo.png" class="img-fluid" alt="empty-logo">
+									<h4 class="my-3">No Conversation Yet.</h4>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-thirteenth" role="tabpanel"
+								aria-labelledby="chat-thirteenth-tab">
+								<div class="chat-day text-center mb-3">
+									<span class="badge badge-secondary-inverse">Today</span>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Ding dong. who is it?</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:18 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>Lorem Ipsum</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:20 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Need some serif.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:22 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>We only have slabs.</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Do you have more height or width?</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:31 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-left">
+									<div class="chat-message-text">
+										<span>We are bold.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:41 pm</span>
+									</div>
+								</div>
+								<div class="chat-message chat-message-right">
+									<div class="chat-message-text">
+										<span>Fine with it.</span>
+									</div>
+									<div class="chat-message-meta">
+										<span>4:43 pm<i class="fa fa-check ml-2"></i></span>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="chat-fourtinth" role="tabpanel"
+								aria-labelledby="chat-fourtinth-tab">
+								<div class="empty-screen">
+									<img src="assets/images/empty-logo.png" class="img-fluid" alt="empty-logo">
+									<h4 class="my-3">No Conversation Yet.</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="chat-bottom">
+						<div class="chat-messagebar">
+							<form>
+								<div class="input-group">
+									<div class="input-group-prepend">
+										<a href="#" id="button-addonmic"><i class="material-icons"
+												style="font-size:24px;color:red">mic</i></a>
+									</div>
+									<input type="text" class="form-control" placeholder="Type a message..."
+										aria-label="Text">
+									<div class="input-group-append">
+										<ul class="list-inline float-right mb-0">
+											<li class="list-inline-item">
+												<div class="dropdown">
+													<a href="#" class="mr-3" id="button-addonlink" class=""
+														id="chatDropdown" data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false"><img src="assets/images/paperclique.svg"
+															alt="Generic placeholder image"
+															style="padding-top: 12px;"></a>
+													<div class="dropdown-menu dropdown-menu-right"
+														aria-labelledby="chatDropdown">
+														<a class="dropdown-item font-14" href="#">Upload a file</a>
+														<a class="dropdown-item font-14">
+															<p>Rendez-vous</p><input type="datetime-local"
+																id="datetimelocal" class="without_ampm">
+															<p style="margin-top: 7px; color: red; margin-left: 145px; cursor: pointer;"
+																onclick="envoyezRDV()">Envoyer</p>
+														</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+										<a href="#" id="button-addonsend"><img src="assets/images/send.svg"
+												alt="Generic placeholder image"></a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- End Chat Detail -->
+				<!-- Start Chat User Info -->
+				<div class="chat-user-info">
+					<div class="chat-user-head">
+						<div class="row align-items-center">
+							<div class="col-9">
+								<h5>Utilisateur Info</h5>
+							</div>
+							<div class="col-3">
+								<ul class="list-inline float-right mb-0">
+									<li class="list-inline-item">
+										<a href="#" id="close-user-info"><img src="assets/images/X.svg"
+												alt="Generic placeholder image"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="chat-user-body">
+						<div class="userbar">
+							<img class="user-pic img-fluid" src="assets/images/girl.svg" alt="user-pic">
+							<h5>Emily Cook</h5>
+							<p class="mb-0">Cotonou, Bénin</p>
+						</div>
+						<div class="user-detail">
+							<p class="user-detail-header">Apropos</p>
+							<div class="user-about">
+								<h6><img class="mr-2" src="assets/images/heart.svg" alt="user-pic">Feeling good today.
+								</h6>
+								<h6 class="my-3"><img class="mr-2" src="assets/images/email.svg"
+										alt="user-pic">developperfullstack@gmail.com</h6>
+								<h6 class="mb-0"><img class="mr-2" src="assets/images/phone-call.svg" alt="user-pic">+1
+									9876543210</h6>
+							</div>
+							<p class="user-detail-header">Profil social</p>
+							<div class="user-social">
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item">
+										<a href="#" class="facebook"><img src="assets/images/facebook.svg"
+												alt="user-pic"></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="twitter"><img src="assets/images/twitter.svg"
+												alt="user-pic"></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="#" class="instagram"><img src="assets/images/instagrame.svg"
+												alt="user-pic"></i></a>
+									</li>
+								</ul>
+							</div>
+							<p class="user-detail-header">Media</p>
+							<div class="user-media">
+								<div class="user-media-slider">
+									<div class="user-media-slider-item">
+										<img src="assets/images/media_01.png" class="" alt="user-media">
+									</div>
+									<div class="user-media-slider-item">
+										<img src="assets/images/media_02.png" class="" alt="user-media">
+									</div>
+									<div class="user-media-slider-item">
+										<img src="assets/images/media_03.png" class="" alt="user-media">
+									</div>
+									<div class="user-media-slider-item">
+										<img src="assets/images/media_04.png" class="" alt="user-media">
+									</div>
+									<div class="user-media-slider-item">
+										<img src="assets/images/pdf.svg" class="" alt="user-media">
+									</div>
+									<div class="user-media-slider-item">
+										<img src="assets/images/xls.svg" class="" alt="user-media">
+									</div>
+									<div class="user-media-slider-item">
+										<img src="assets/images/doc.svg" class="" alt="user-media">
+									</div>
+								</div>
+							</div>
+							
+							<p class="user-detail-header">Paramètres</p>
+							<div class="user-setting">
+								<div class="row align-items-center pb-3">
+									<div class="col-9">
+										<h6 class="mb-0">Désactiver les notifications</h6>
+									</div>
+									<div class="col-3 text-right">
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="muteNotification"
+												checked>
+											<label class="custom-control-label" for="muteNotification"></label>
+										</div>
+									</div>
+								</div>
+								<div class="row align-items-center pb-3">
+									<div class="col-9">
+										<h6 class="mb-0">Bloquer le contact</h6>
+									</div>
+									<div class="col-3 text-right">
+										<div class="custom-control custom-switch">
+											<input type="checkbox" class="custom-control-input" id="blockContact">
+											<label class="custom-control-label" for="blockContact"></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Chat User Info -->
+			</div>
+			<!-- End Chat Rightbar -->
+		</div>
+		<!-- End Chat Layout -->
+		<!-- Start js -->
+	</div>
+	<!-- Large modal -->
+	<div class="modal fade bda-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="background-color:transparent;">
+				<script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+				<div id="webcambox">
+					<video id="webcamip" autoplay playsinline width="640" height="480" class="webcamipclassi"
+						onclick="exchangeclass2a()" video.crossOrigin='anonymous'></video>
+					<div id="canvasad" class="webcamipclass" onclick="exchangeclass()"
+						>
+						<img src="assets/images/ttodo.jpg" alt="" style="margin-top: 38px;">
+					</div>
+					<canvas id="canvasip" class="d-none" width="640" height="480"></canvas>
+					<audio id="snapSoundip" src="audio/snap.wav" preload="auto"></audio>
+				</div>
+				<div id="webcamip2" style="display: none;">
+					<div class="container" style="margin-bottom: 60px;" id="avatarProfile">
+						<div class="row">
+							<div class="col-lg-5"></div>
+							<div class="col-lg2" style="margin-left: 34px;">
+								<div>
+									<img src="assets/images/men1.png" alt=""
+										style="border-radius: 100%; margin-top: 95px; margin-bottom: 10px;"
+										id="vidoaOp">
+								</div>
+							</div>
+							<div class="col-lg-5"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4"></div>
+					<div class="col-lg-4 col-md-4" id="lesicons">
+						<div id="cameraControls" class="cameraControlsvoice">
+							<div id="aligervousimgabout" style="display: inline-flex;">
+								<div id="material-icons1" onclick="cacherLeboutonicon()"><img
+										src="assets/images/bxs-microphone.svg" alt=""
+										style="margin-right: 52px; cursor: pointer;"></div>
+								<div id="material-icons2" style="display: none; margin-right: 10px; cursor: pointer;"
+									onclick="cacherLebouton1()"><img src="assets/images/bxs-microphone-off.svg" alt="">
+								</div>
+								<div id="material-icons3"><img src="assets/images/end-call.png"
+										alt="Generic placeholder image"
+										style="height: 34px; width: 34px; margin-right: 52px; cursor: pointer;"></div>
+								<div id="material-icons4" onclick="cacherLeboutonA()"><img
+										src="assets/images/bxs-video.svg" alt=""
+										style="height: 34px; width: 34; cursor: pointer;"></div>
+								<div id="material-icons5" style="display: none;" onclick="cacherLebouton1A()"><img
+										src="assets/images/bxs-video-off.svg" alt=""
+										style="height: 34px; width: 34; cursor: pointer;"></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----voice call start --->
+	<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content" style="background-color: transparent;">
+				<div id="webcamip2">
+					<div class="container" style="margin-bottom: 60px;" id="avatarProfile">
+						<div class="row">
+							<div class="col-lg-5"></div>
+							<div class="col-lg2" id="logocalling">
+								<div>
+									<img src="assets/images/men1.png" alt=""
+										style="border-radius: 100%; margin-top: 95px; margin-left: 25px; margin-bottom: 10px;">
+								</div>
+								<strong style="margin-left: 55px;"><mark>SODINYESSI Sènou Gérard</mark></strong>
+								<p></p>
+								<h6 style="margin-left: 125px;">00:00</h6>
+							</div>
+							<div class="col-lg-5"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4"></div>
+					<div class="col-lg-4 col-md-5" id="lesicons">
+						<div id="cameraControls" class="cameraControls">
+							<div id="aligervousimg" style="display: inline-flex;">
+								<div id="material-icons1call" onclick="cacherLeboutoniconcall()"><img
+										src="assets/images/bxs-microphone-off.svg" alt=""
+										style="margin-right: 52px; cursor: pointer;"></div>
+								<div id="material-icons2call"
+									style="display: none; margin-right: 10px; cursor: pointer;"
+									onclick="cacherLebouton1call()"><img src="assets/images/bxs-microphone.svg" alt="">
+								</div>
+								<div id="material-icons3call"><img src="assets/images/end-call.png"
+										alt="Generic placeholder image"
+										style="height: 34px; width: 34px; margin-right: 52px; cursor: pointer;"
+										onclick="voicecaleend()"></div>
+								<div id="material-icons4call" onclick="cacherLeboutonAcall()"><img
+										src="assets/images/hautparleroff.svg" alt=""
+										style="height: 41px; width: 41; cursor: pointer;"></div>
+								<div id="material-icons5call" style="display: none;" onclick="cacherLebouton1Acall()">
+									<img src="assets/images/hautparleron.svg" alt=""
+										style="height: 41px; width: 41; cursor: pointer; "></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-3"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!----voice call end--->
+	<!-- Button trigger modal -->
+	<!-------------- modal------------>
+	<script src="patient.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/modernizr.min.js"></script>
+	<script src="assets/js/detect.js"></script>
+	<script src="assets/js/jquery.slimscroll.js"></script>
+	<script src="assets/js/vertical-menu.js"></script>
+	<!-- Slick js -->
+	<script src="assets/plugins/slick/slick.min.js"></script>
+	<!-- Core js -->
+	<script src="assets/js/core.js"></script>
+	<script src="todo.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="jquery.counterup.min.js"></script>
+	<!-- MDB -->
+	<script>
+		AOS.init();
+	</script>
+
+	<!-- End js -->
+</body>
+
+</html>
+
+
+
+
+
+							<div id="ilfautscroller">
+								<div class="container">
+
+									
+								</div>
+							</div>

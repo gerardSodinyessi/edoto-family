@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Gappa is a bootstrap minimal & clean admin template">
+	<meta name="keywords"
+		content="chat, chat platform, discussion, video call, voice call, communication, conversation, messange, messanger, talk">
+	<meta name="author" content="Themesbox">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+	<title>e-doto planning</title>
+	<!-- Fevicon -->
+	<link rel="shortcut icon" href="assets/images/logonavigator.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!------webcameasy------->
+	<!-- Start css -->
+	<!-- Slick css -->
+	<link rel="stylesheet" href="indexMonDocteur.css">
+	<link href="assets/plugins/slick/slick.css" rel="stylesheet">
+	<link href="assets/plugins/slick/slick-theme.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/flag-icon.min.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="cssControlForm.css">
+
+	<!--<script>
+		setTimeout(function(event){
+			event.prevent
+   window.location.reload(1);
+}, 5000);
+	</script>-->
+	<script>
+		const UserConnectIdacessHospital = localStorage.getItem("storageNameH");
+		//alert(UserConnectIdacessHospital);
+		if (!UserConnectIdacessHospital) {
+		window.location.href = "../index.html";
+		}
+	</script>
+</head>
+
+<body class="dark-layout" id="dark-layout">
+	<section id="idHospitalShow">
+		<div id="toutChatdoctorhide">
+			<script>
+				document.getElementById('btn-primaryquittergroup').onclick = function () {
+					$('#createGroup').modal('hide')
+				}
+			</script>
+			<!-- End Incoming Video Call Modal -->
+			<!-- Start Incoming Video Call Modal -->
+			<div class="modal incoming-video-modal fade" id="incomingVideoCall" tabindex="-1" role="dialog"
+				aria-labelledby="incomingVideoCallTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="incomingVideoCallTitle">Appel vidéo entrant</h5>
+						</div>
+						<div class="modal-body">
+							<img src="assets/images/girl.svg" alt="avatar" class="rounded-circle">
+							<h5 class="text">Jessica Meir</h5>
+							<p class="text">Texas, USA</p>
+							<button type="button" class="btn btn-success mr-3" onclick="toutChatdoctorhide()">
+								<i class="fa fa-check mr-2" class="nav-link"></i>Accepter</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal"><i
+									class="fa fa-close mr-2"></i>Rejecter</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Incoming Video Call Modal -->
+			<!-- Start Incoming Voice Call Modal -->
+			<div class="modal incoming-voice-modal fade" id="incomingVoiceCall" tabindex="-1" role="dialog"
+				aria-labelledby="incomingVoiceCallTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="incomingVoiceCallTitle">Appel vocal entrant</h5>
+						</div>
+						<div class="modal-body">
+							<img src="assets/images/men.svg" alt="avatar" class="rounded-circle">
+							<h5>Jessica Meir</h5>
+							<p>Texas, USA</p>
+							<button type="button" class="btn btn-success mr-3" onclick="voiceCalling()"><i
+									class="fa fa-check mr-2"></i>Accepter</button>
+							<button type="button" class="btn btn-danger" data-dismiss="modal"><i
+									class="fa fa-close mr-2"></i>Rejecter</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End Incoming Voice Call Modal -->
+			<!-- Start Error Screen Modal -->
+			<div class="modal error-screen-modal fade" id="errorScreen" tabindex="-1" role="dialog"
+				aria-labelledby="errorScreenTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document">
+					<div class="modal-content" style="background-color: #f82249;">
+						<div class="modal-header">
+							<h5 class="modal-title" id="errorScreenTitle">Connection Error</h5>
+						</div>
+						<div class="modal-body">
+							<img src="assets/images/connection_error.svg" class="img-fluid" alt="connection_error">
+							<h5>Ordinateur non connecté</h5>
+							<p style="color: white;">Veuillez vérifier la connexion Internet de ce PC.</p>
+							<button type="button" class="btn btn-info"><img src="assets/images/iconerror.svg" alt=""
+									style="width: 20px; height: 20px;"> Essayez à nouveau</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal create-group-modal fade" id="scanner-qr-code" tabindex="-1" role="dialog"
+				aria-labelledby="createGroupTitle" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered" role="document" style="background-color: cornsilk;">
+					<div>
+						<img src="assets/images/qr-code.png" alt="avatar" style="width: 100%; height: 100%;">
+					</div>
+				</div>
+			</div>
+			<!-- End Incoming Voice Call Modal -->
+			<!-- Start Chat Layout -->
+			<div class="chat-layout">
+				<!-- Start Chat Leftbar -->
+				<div class="chat-leftbar">
+					<div class="tab-content" id="pills-tab-justifiedContent">
+						<!-- Start Chat Listbar -->
+						<div class="tab-pane fade show active" id="pills-chat-justified" role="tabpanel"
+							aria-labelledby="pills-chat-tab-justified">
+							<div class="chat-listbar">
+								<div class="chat-left-headbar">
+									<div class="row align-items-center">
+										<div class="col-5">
+											<ul class="list-unstyled mb-0">
+												<li class="media">
+													<img class="align-self-center mr-2" src="assets/images/men.svg"
+														alt="Generic placeholder image"
+														style="width: 44px; height: 44px; border-radius: 100%;">
+													<div class="media-body">
+														<h5 class="mb-0 mt-2">Chat</h5>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+	
+								<style>
+									body {
+										font-family: "Lato", sans-serif;
+									}
+	
+									.sidenav {
+										height: 100%;
+										width: 0;
+										position: fixed;
+										z-index: 1;
+										top: 0;
+										left: 0;
+										background-color: #111;
+										overflow-x: hidden;
+										transition: 0.5s;
+										padding-top: 60px;
+									}
+	
+									.sidenav a {
+										padding: 8px 8px 8px 32px;
+										text-decoration: none;
+										font-size: 25px;
+										color: #818181;
+										display: block;
+										transition: 0.3s;
+									}
+	
+									.sidenav a:hover {
+										color: #f1f1f1;
+									}
+	
+									.sidenav .closebtn {
+										position: absolute;
+										top: 0;
+										right: 25px;
+										font-size: 36px;
+										margin-left: 50px;
+									}
+	
+									@media screen and (max-height: 450px) {
+										.sidenav {
+											padding-top: 15px;
+										}
+	
+										.sidenav a {
+											font-size: 18px;
+										}
+									}
+								</style>
+								<div id="mySidenav" class="sidenav" style="margin-top: 75px; padding-bottom: 145px;">
+									<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+								</div>
+								<div class="chat-left-search">
+									<form>
+										<div class="input-group">
+											<input type="search" class="form-control" placeholder="Search"
+												aria-label="Search" aria-describedby="chat-left-search-btn">
+											<div class="input-group-append">
+												<button class="btn" type="submit" id="chat-left-search-btn"><img
+														src="assets/images/search.svg"
+														alt="Generic placeholder image"></button>
+											</div>
+										</div>
+									</form>
+								</div>
+								<div class="chat-left-body" style="padding-bottom: 110px;">
+									<div class="nav flex-column nav-pills chat-userlist" id="chat-list-tab" role="tablist"
+										aria-orientation="vertical">
+										<span id="getUserMessageAll"></span>
+										<!--<a class="nav-link" id="chat-second-tab" data-toggle="pill" href="#chat-second"
+											role="tab" aria-controls="chat-second" aria-selected="false">
+											<div class="media">
+												<img class="align-self-center rounded-circle" src="assets/images/boy.svg"
+													alt="User Image">
+												<div class="media-body">
+													<h5>James Simeron<span class="chat-timing">Today</span></h5>
+													<p>Send your CV for more info...</p>
+												</div>
+											</div>
+										</a>-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Chat Listbar -->
+						<!-- Start Chat Addbar -->
+						<div class="tab-pane fade" id="pills-addchat-justified" role="tabpanel"
+							aria-labelledby="pills-addchat-tab-justified">
+							<div class="chat-addbar">
+								<div class="chat-left-headbar">
+									<div class="row align-items-center">
+										<div class="col-8">
+											<ul class="list-unstyled mb-0">
+												<li class="media">
+													<!-- <img class="align-self-center mr-2" src="assets/images/men1.png"
+														alt="Generic placeholder image"
+														style="width: 44px; height: 44px; border-radius: 100%;">-->
+													<div class="media-body">
+														<h5 class="mb-0 mt-2">Mes commandes</h5>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<!--<div class="chat-left-search">
+									<form>
+										<div class="input-group">
+											<input type="search" id="myInput" class="form-control" placeholder="Search"
+												aria-label="Search" aria-describedby="chat-left-search-user-btn"
+												onkeyup="myfunction()">
+											<div class="input-group-append">
+												<button class="btn" type="submit" id="chat-left-search-user-btn"><img
+														src="assets/images/search.svg"
+														alt="Generic placeholder image"></button>
+											</div>
+										</div>
+									</form>
+								</div>-->
+								<div class="chat-left-body" style="padding-bottom: 110px;">
+									<div class="nav flex-column nav-pills chat-userlist" id="new-chat-tab" role="tablist"
+										aria-orientation="vertical">
+										<span id="getUserMessageAllcommands"></span>
+										<!--<ul id="myUL" style=" list-style-type: none; padding: 0;margin: 0;">
+										<li><a class="nav-link active" id="new-chat-first-tab" data-toggle="pill" href="#"
+												role="tab" aria-selected="true">
+												<div class="media">
+													<img class="align-self-center rounded-circle"
+														src="assets/images/men.svg" alt="User Image">
+													<div class="media-body">
+														<h5>John Doe</h5>
+														<p>Hey there. I am on Chalty.</p>
+													</div>
+												</div>
+										</a></li>
+									</ul>-->
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Chat Addbar -->
+						<!-- Start Chat Profilebar -->
+						<div class="tab-pane fade" id="pills-profile-justified" role="tabpanel"
+							aria-labelledby="pills-profile-tab-justified">
+							<div class="chat-profilebar">
+								<div class="chat-left-headbar">
+									<div class="row align-items-center">
+										<div class="col-9">
+											<ul class="list-unstyled mb-0">
+												<li class="media">
+													<!--<img class="align-self-center mr-2" src="assets/images/men1.png"
+														alt="Generic placeholder image"
+														style="width: 44px; height: 44px; border-radius: 100%;">-->
+													<div class="media-body">
+														<h5 class="mb-0 mt-2">Mon Profile</h5>
+													</div>
+												</li>
+											</ul>
+										</div>
+										<div class="col-3">
+											<div class="dropdown">
+												<a href="loginHospital.html" data-toggle="tooltip" data-placement="right"
+												title="Logout"><i class="fa fa-sign-out" style="color: #f82249;"></i></a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="chat-left-body">
+									<div class="profilebar">
+										<img class="profile-pic img-fluid" src="assets/images/lesLogosCentre.png" alt="profile-pic" id="MyProFilSrcimg">
+										<img src="assets/images/pencil-square.svg" alt="" id="CreateYouProfile" data-toggle="modal" data-target="#exampleModalCreate">
+										<div class="profile-edit">
+											<!--<img src="assets/images/camera.svg" alt="Generic placeholder image"
+												class=" upload-button">
+											<input class="profile-upload" type="file" accept="image/*"/>-->
+										</div>
+									</div>
+								<span id="getUserProfilIdFormeH"></span>
+							   </div>
+							</div>
+						</div>
+
+						<div class="modal fade" id="exampleModalCreate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog" role="document">
+							  <div class="modal-content">
+								<div class="modal-header">
+								  <h5 class="modal-title" id="exampleModalLabel">Profil</h5>
+								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								  </button>
+								</div>
+								<div class="modal-body">
+								  <form id="formProfilH" action="javascript:postDataProfilHospi()">
+									  <!--<div class="form-group">
+										  <label for="recipient-name" class="col-form-label">Nom d'utilisateur:</label>
+										  <input type="text" class="form-control" name="username" id="recipient-username">
+										</div>-->
+									<div class="form-group">
+									  <label for="recipient-name" class="col-form-label">Nom:</label>
+									  <input type="text" class="form-control" name="last_name" id="recipient-last_nameH">
+									</div>
+									<div class="form-group">
+									  <label for="recipient-name" class="col-form-label">Prénoms:</label>
+									  <input type="text" class="form-control" name="first_name" id="recipient-first_nameH">
+									</div>
+								   <!-- <div class="form-group">
+									  <label for="recipient-name" class="col-form-label">Email:</label>
+									  <input type="email" class="form-control" name="email" id="recipient-email">
+									</div>
+									<div class="form-group">
+									  <label for="recipient-name" class="col-form-label">Photo:</label>
+									  <input class="profile-upload" type="file" accept="image/*" id="recipient-fileH"/>
+									</div>-->
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+								  <input
+								  type="submit"
+								  value="Enregistrer"
+								  id="logPOX"
+								  class="btn btn-success"
+								  />
+								</div>
+							  </form>
+							  </div>
+							</div>
+						  </div>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalCenteresignup" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenteresignupTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="modal-body">
+									<div class="form-group">
+										<!-- Content -->
+										<div class="container">
+											<div class="row">
+												<h2 style="text-align: center;">Authentifier votre inscription ici!</h2>
+												<div class="col-md-12" style="margin-left: 60px;" id="canvassignup">
+													
+													<canvas id="sig-canvas" width="250vh"
+														height="175">
+														Trouve un meilleur navigateur, mon frère.
+													</canvas>
+													<h1></h1>
+													<h1></h1>
+													<div style="margin-left: 55px;" id="buttoncanvas">
+													<button class="btn btn-primary"
+														id="sig-submitBtn">Soumettre </button>
+													<button class="btn btn-default"
+														id="sig-clearBtn">Effacer </button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>				
+						<!-----e-signature---->
+						<!-- End Chat Profilebar -->
+						<!-- Start Chat Settingbar -->
+						<div class="tab-pane fade" id="pills-setting-justified" role="tabpanel"
+							aria-labelledby="pills-setting-tab-justified">
+							<div class="chat-settingbar">
+								<div class="chat-left-headbar">
+									<div class="row align-items-center">
+										<div class="col-8">
+											<ul class="list-unstyled mb-0">
+												<li class="media">
+													<!-- <img class="align-self-center mr-2" src="assets/images/men1.png"
+														alt="Generic placeholder image"
+														style="width: 44px; height: 44px; border-radius: 100%;">-->
+													<div class="media-body">
+														<h5 class="mb-0 mt-2">Les visio validées</h5>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<p id="theAllMsgGetHospital"></p>   
+							</div>
+						</div>
+						<!-- End Chat Settingbar -->
+					</div>
+					<div class="chat-menu">
+						<ul class="nav nav-pills nav-justified mb-0" id="pills-tab-justified" role="tablist">
+							<li class="nav-item">
+								<a class="nav-link active" id="pills-chat-tab-justified" data-toggle="pill"
+									href="#pills-chat-justified" role="tab" aria-controls="pills-chat-justified"
+									aria-selected="true"><img src="assets/images/girlamessage.svg"
+										alt="Generic placeholder image" style="font-size: 24px; color:red; ">
+									</a>
+									Patients
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-addchat-tab-justified" data-toggle="pill"
+									href="#pills-addchat-justified" role="tab" aria-controls="pills-addchat-justified"
+									aria-selected="false"><img src="assets/images/bagcheckfill.svg"
+										alt="Generic placeholder image" style="font-size: 24px; color:red; "></a>
+								Commandes
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-setting-tab-justified" data-toggle="pill"
+									href="#pills-setting-justified" role="tab" aria-controls="pills-setting-justified"
+									aria-selected="false"><img src="assets/images/girlay.svg"
+										alt="Generic placeholder image" style="font-size: 24px; color:red;"></a>
+								Suivi
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" id="pills-profile-tab-justified" data-toggle="pill"
+									href="#pills-profile-justified" role="tab" aria-controls="pills-profile-justified"
+									aria-selected="false"> <img src="assets/images/girla.svg"
+										alt="Generic placeholder image" style="font-size: 24px; color:red; ">
+									</a>
+									Profil
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- End Chat Leftbar -->
+				<!-- Start Chat Rightbar -->
+				<div class="chat-rightbar">
+					<!-- Start Chat Detail -->
+					<div class="chat-detail">
+						<div class="chat-head">
+							<div class="row align-items-center">
+								<div class="col-5">
+									<ul class="list-unstyled mb-0">
+										<li class="media">
+											<!--<div class="user-status"></div>-->
+											<img class="align-self-center rounded-circle" src="assets/images/lesLogosCentre.png"
+												alt="Generic placeholder image">
+											<!--<div class="media-body">
+												<h5>Notre centre au service de tous</h5>
+												<p class="mb-0">en ligne</p>
+											</div>-->
+										</li>
+									</ul>
+								</div>
+								<div class="col-7">
+									<!--<ul class="list-inline float-right mb-0">
+										<li class="list-inline-item">
+											<a href="#" data-toggle="modal" data-target="#incomingVoiceCall"> <img
+													class="align-self-center rounded-circle" src="assets/images/phone.svg"
+													alt="Generic placeholder image"
+													style="color: #f82249; width: 16px; height: 30px; margin-bottom: 10px;"></a>
+										</li>
+										<li class="list-inline-item">
+											<a href="#" data-toggle="modal" data-target="#incomingVideoCall"><i class="material-icons" style="color: #f82249; " >videocam</i></a>
+										</li>
+										<li class="list-inline-item">
+											<div class="dropdown">
+												<a href="#" class="" id="chatDropdown" data-toggle="dropdown"
+													aria-haspopup="true" aria-expanded="false"> <img
+														class="align-self-center rounded-circle"
+														src="assets/images/more-hori.svg" alt="Generic placeholder image"
+														style="color: #f82249; width: 20px; margin-bottom: 13px;"></a>
+												<div class="dropdown-menu dropdown-menu-right"
+													aria-labelledby="chatDropdown">
+													<a class="dropdown-item font-14" href="#"
+														id="view-user-info">Utilisateur Info</a>
+													<a class="dropdown-item font-14" href="#">Exporter Chat</a>
+													<a class="dropdown-item font-14" href="#">Effacer Message</a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<a href="#" class="back-arrow"><img src="assets/images/delelta.svg" alt=""
+													style="height: 27px; width: 27px; margin-bottom: 13px;"></a>
+										</li>
+									</ul>-->
+								</div>
+							</div>
+						</div>
+						<div class="chat-body">
+							<div class="tab-content" id="chat-listContent">
+								<div class="tab-pane fade show active" id="chat-first" role="tabpanel"
+									aria-labelledby="chat-first-tab">
+								<img src="assets/images/undraw_medicine.svg" alt="" style="height: 75vh; width: auto;">
+								</div>
+								<div class="tab-pane fade" id="chat-second" role="tabpanel"
+									aria-labelledby="chat-second-tab">
+									<div class="empty-screen">
+										<img src="assets/images/empty-logo.png" class="img-fluid" alt="empty-logo">
+										<h4 class="my-3">No Conversation Yet.</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!---------un modaleTestsend--------->
+						<div class="chat-bottom">
+							<div class="chat-messagebar">
+								<form onsubmit="monTextEnvoieJav()">
+									<div class="input-group">
+										<div class="input-group-prepend">
+											<a href="#" id="button-addonmic"><i class=""
+													style="font-size:24px;color:red"></i></a>
+										</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<!-- End Chat Detail -->
+					</div>
+					<!-- Start Chat User Info -->
+					<div id="changerCssuserInfo">
+						<div class="chat-user-info">
+							<div class="chat-user-head">
+								<div class="row align-items-center">
+									<div class="col-9">
+										<h5>Nos disponibilés</h5>
+									</div>
+									<div class="col-3">
+										<ul class="list-inline float-right mb-0">
+											<li class="list-inline-item">
+												<a href="#" id="close-user-info"><img src="assets/images/X.svg"
+														alt="Generic placeholder image"></a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="chat-user-body">
+								<div class="userbar">
+									<img class="user-pic img-fluid" style="height: 20vh; width:17vh;"
+									src="assets/images/lesLogosCentre.png" alt="user-pic">
+									<h5>Mettre à jour vos disponibilés</h5>
+								</div>
+								<div class="user-detail">
+									<div class="user-about" style="padding: 15px; overflow-y: auto; height: 300px">
+										<form>
+											<hr style="background-color: green;">
+											<h5 style="text-align: center;">Lundi</h5>
+											<div class="form-group">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 ml-0"><label for="formControlRange" style="color: red;">Indisponible</label></div>
+														<div class="col-lg-6 col-md-6"><label for="formControlRange" style=" color: green;" class="dispoNibal">Disponible</label></div>
+													</div>
+												</div> 
+											<input type="range" class="form-control-range" id="formControlRange">
+											</div>
+											<hr style="background-color: green;">
+											<h5 style="text-align: center;">Mardi</h5>
+											<div class="form-group">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 ml-0"><label for="formControlRange" style="color: red;">Indisponible</label></div>
+														<div class="col-lg-6 col-md-6"><label for="formControlRange" class="dispoNibalm"style="color: green;">Disponible</label></div>
+													</div>
+												</div> 
+											<input type="range" class="form-control-range" id="formControlRange">
+											</div>
+											<hr style="background-color: green;">
+											<h5 style="text-align: center;">Mercredi</h5>
+											<div class="form-group">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 ml-0"><label for="formControlRange" style="color: red;">Indisponible</label></div>
+														<div class="col-lg-6 col-md-6"><label for="formControlRange" class="dispoNibalme" style="color: green;">Disponible</label></div>
+													</div>
+												</div> 
+											<input type="range" class="form-control-range" id="formControlRange">
+											</div>
+											<hr style="background-color: green;">
+											<h5 style="text-align: center;">Jeudi</h5>
+											<div class="form-group">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 ml-0"><label for="formControlRange" style="color: red;">Indisponible</label></div>
+														<div class="col-lg-6 col-md-6"><label for="formControlRange" class="dispoNibalj"style="color: green;">Disponible</label></div>
+													</div>
+												</div> 
+											<input type="range" class="form-control-range" id="formControlRange">
+											</div>
+											<hr style="background-color: green;">
+											<h5 style="text-align: center;">Vendredi</h5>
+											<div class="form-group">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 ml-0"><label for="formControlRange" style="color: red;">Indisponible</label></div>
+														<div class="col-lg-6 col-md-6"><label for="formControlRange" class="dispoNibalv"style="color: green;">Disponible</label></div>
+													</div>
+												</div> 
+											<input type="range" class="form-control-range" id="formControlRange">
+											</div>
+											<hr style="background-color: green;">
+											<h5 style="text-align: center;">Samedi</h5>
+											<div class="form-group">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 ml-0"><label for="formControlRange" style="color: red;">Indisponible</label></div>
+														<div class="col-lg-6 col-md-6"><label for="formControlRange" class="dispoNibals"style="color: green;">Disponible</label></div>
+													</div>
+												</div> 
+											<input type="range" class="form-control-range" id="formControlRange">
+											</div>
+											<hr style="background-color: green;">
+											<h5 style="text-align: center;">Dimanche</h5>
+											<div class="form-group">
+												<div class="container">
+													<div class="row">
+														<div class="col-lg-6 col-md-6 ml-0"><label for="formControlRange" style="color: red;">Indisponible</label></div>
+														<div class="col-lg-6 col-md-6"><label for="formControlRange" class="dispoNibald" style=" color: green;">Disponible</label></div>
+													</div>
+												</div> 
+											<input type="range" class="form-control-range" id="formControlRange">
+											</div>
+										  </form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Chat User Info -->
+					<!-- End Chat Rightbar -->
+				</div>
+		</div>
+	</section>
+
+
+	<section id="idHospitalShowJitisi" style="margin: 5vh; display: none;">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div id="jitsi-container" class="container align-items-center"></div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<img src="assets/images/undraw_through.svg" alt="" style="width: 100vh;">
+					<h4 style="color: white;">Définir la date de la pré-consultation</h4>
+					<form class="form-inline">
+						<label class="sr-only" for="inlineFormInputGroupUsername1">Du</label>
+						<div class="input-group mb-2 mr-sm-2">
+						  <div class="input-group-prepend">
+							<div class="input-group-text">Du</div>
+						  </div>
+						  <input style="border: solid 1px white;" type="datetime-local" class="form-control" id="inlineFormInputGroupUsername1" placeholder="Du">
+						</div>
+					  
+						<label class="sr-only" for="inlineFormInputGroupUsername2">au</label>
+						<div class="input-group mb-2 mr-sm-2">
+						  <div class="input-group-prepend">
+							<div class="input-group-text">au</div>
+						  </div>
+						  <input style="border: solid 1px white;" type="datetime-local" class="form-control" id="inlineFormInputGroupUsername2" placeholder="au">
+						</div>
+					  
+						<div class="input-group mb-2 mr-sm-2">
+						  <div class="input-group-prepend">
+							<div class="input-group-text">Le lien de la visio-conférence</div>
+						  </div>
+						  <input style="border: solid 1px white;" type="url" name="url" class="form-control" id="inlineFormInputGroupUsername3">
+						</div>
+					  
+						<button type="button" class="btn btn-primary mb-2" id="sendLinkVisioData">Envoyer</button>
+					  </form>
+				</div>
+			</div>
+		</div>
+	</section>
+	</div>
+	<!-- Start js -->
+	<script src="hopsitalMsgSend.js"></script>
+	<script src="getUpdateProfilHos.js"></script>
+	<script src="https://meet.jit.si/external_api.js"></script>
+	<script src="messageGet.js"></script>
+	<script src="commandsGet.js"></script>
+	<script src="getUpdateProfil.js"></script>
+	<script src="serveurs/serveur.jS"></script>
+	<script src="indexMonDocteur.js"></script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/modernizr.min.js"></script>
+	<script src="assets/js/detect.js"></script>
+	<script src="assets/js/jquery.slimscroll.js"></script>
+	<script src="assets/js/vertical-menu.js"></script>
+	<!-- Slick js -->
+	<script src="assets/plugins/slick/slick.min.js"></script>
+	<!-- Core js -->
+	<script src="assets/js/core.js"></script>
+	<script src="todo.js"></script>
+	<!-- MDB -->
+	<script>
+		AOS.init();
+	</script>
+	<!-- MDB -->
+
+	<!-- End js -->
+</body>
+
+</html>

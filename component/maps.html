@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function distance(lon1, lat1, lon2, lat2) {
+        var R = 6371; //Radius of the earth in km
+        var dLat = (lat2 - lat1).toRad(); //Javascript functions in radians
+        var dLon = (lon2 - lon1).toRad();
+        var a =
+          Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+          Math.cos(lat1.toRad()) *
+            Math.cos(lat2.toRad()) *
+            Math.sin(dLon / 2) *
+            Math.sin(dLon / 2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+        var d = R * c; //Distance in km
+        return d;
+      }
+
+      /** Converts numeric degrees to radians */
+      if (typeof Number.prototype.toRad === "undefined") {
+        Number.prototype.toRad = function () {
+          return (this * Math.PI) / 180;
+        };
+      }
+      var lonto = 2.391679552121058;
+      var lato = 6.374359569984654;
+
+      window.navigator.geolocation.getCurrentPosition(function (pos) {
+        var objeta = [
+          {
+            id: "1",
+            lonto: "2.391679552121058",
+            lato: "6.374359569984654",
+          },
+          {
+            id: "2",
+            lonto: "2.491679552121058",
+            lato: "6.274359569984654",
+          },
+        ];
+        var table = [];
+        const index = objeta.findIndex((element, index) => {
+          //console.log(element.lonto, element.lato);
+          var lantoName = element.lonto;
+          var latoName = element.lato;
+          table.push(lantoName, latoName);
+          console.log(table);
+        });
+        console.log(pos);
+        console.log(
+          distance(
+            pos.coords.longitude,
+            pos.coords.latitude,
+            table[0],
+            table[1]
+          )
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:cc="http://web.resource.org/cc/"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    id="svg1"
+    sodipodi:docname="signature.svg"
+    viewBox="0 0 60 60"
+    sodipodi:version="0.32"
+    version="1.0"
+    y="0"
+    x="0"
+    inkscape:version="0.38.1"
+    sodipodi:docbase="/home/danny/flat/scalable/actions"
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#f82249"
+      inkscape:pageshadow="2"
+      inkscape:window-width="1016"
+      pagecolor="#f82249"
+      inkscape:zoom="6.9465338"
+      inkscape:window-x="0"
+      borderopacity="1.0"
+      inkscape:cx="33.307957"
+      inkscape:cy="23.184732"
+      inkscape:window-y="0"
+      inkscape:window-height="685"
+      inkscape:pageopacity="0.0"
+  />
+  <path
+      id="path599"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#f82249;stroke-linecap:round;stroke-width:1.8757;fill:#595959"
+      d="m64.489 23.609c1.59-7.585 1.59-7.585 1.59-7.585l1.64 7.57-3.23 0.015z"
+      sodipodi:nodetypes="cccc"
+      transform="matrix(-.74141 -.67051 .67051 -.74141 73.002 83.958)"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <rect
+      id="rect598"
+      style="stroke-linejoin:round;fill-rule:evenodd;stroke:#f82249;stroke-linecap:round;stroke-width:1.8757;fill:#b3b3b3"
+      transform="matrix(-.74141 -.67051 .67051 -.74141 73.002 83.958)"
+      width="3.181"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+      y="23.617"
+      x="64.511"
+      height="22.903"
+      sodipodi:fill-cmyk="(0 0 0 0.3)"
+  />
+  <path
+      id="path600"
+      sodipodi:rx="0.62029958"
+      sodipodi:ry="0.62029958"
+      style="fill-rule:evenodd;stroke:#f82249;stroke-width:2.8509;fill:#f82249"
+      sodipodi:type="arc"
+      d="m61.966 18.726a0.6203 0.6203 0 1 0 -1.24 0 0.6203 0.6203 0 1 0 1.24 0h-0.62z"
+      transform="matrix(-.48780 -.44116 .44116 -.48780 57.974 62.223)"
+      sodipodi:cy="18.72622108"
+      sodipodi:cx="61.34603882"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+  />
+  <rect
+      id="rect601"
+      style="fill-rule:evenodd;stroke:#f82249;stroke-width:1.8757;fill:#cccccc"
+      rx="1"
+      transform="matrix(-.74141 -.67051 .67051 -.74141 73.002 83.958)"
+      width="3.6264"
+      sodipodi:stroke-cmyk="(0 0 0 0.8)"
+      y="46.449"
+      x="64.32"
+      height="1.9722"
+      sodipodi:fill-cmyk="(0 0 0 0.2)"
+  />
+  <path
+      id="path836"
+      style="stroke-width:1pt;fill:#f82249"
+      transform="matrix(3.1334 0 -1.0773 3.1334 20.245 -85.842)"
+      d="m19.941 40.277c0.048-0.264 0.108-0.492 0.156-0.684l0.18-0.672c0.024-0.108 0.048-0.192 0.06-0.264 0.216-0.06 0.228-0.06 0.612-0.672-0.984 0.024-1.26 0.024-1.392 0.024-0.732 0.012-0.936 0.048-1.296 0.264-0.576 0.36-0.984 0.696-1.236 1.02-0.36 0.468-0.792 1.92-0.792 2.652 0 0.3 0.072 0.516 0.264 0.78-0.72 0.624-0.936 0.804-1.38 1.188-0.6 0.528-0.876 0.924-0.876 1.26 0 0.444 0.528 0.696 1.44 0.696 1.104 0 1.968-0.312 2.772-1.008 0.516-0.444 0.636-0.696 0.888-1.884l0.6-2.7zm-1.572 3.288c-0.156 0.72-0.264 0.996-0.48 1.224-0.264 0.3-0.756 0.456-1.464 0.456-0.78 0-1.2-0.216-1.2-0.6 0-0.492 0.324-0.792 3.66-3.348l-0.516 2.268zm1.404-4.92h0.384c-0.06 0.048-0.132 0.108-0.192 0.144-0.384 0.276-0.468 0.384-0.576 0.672-0.108 0.348-0.24 0.816-0.396 1.404-0.24 0.156-0.528 0.372-1.536 1.128-0.216-0.216-0.3-0.408-0.3-0.696 0-0.408 0.288-1.452 0.54-2.028 0.24-0.492 0.492-0.612 1.368-0.612 0.084 0 0.228 0 0.384-0.012h0.324zm-4.572-1.668c0.348-0.312 0.372-0.336 0.78-0.648-0.072-0.144-0.132-0.24-0.156-0.276-0.072-0.144-0.084-0.156-0.18-0.384-0.024-0.048-0.048-0.096-0.072-0.156-0.06 0.048-0.132 0.096-0.168 0.132-0.048 0.048-0.144 0.12-0.264 0.216-0.06 0.048-0.144 0.108-0.252 0.18-0.048 0.036-0.096 0.072-0.144 0.096 0.084 0.264 0.192 0.456 0.456 0.84zm0.828 4.536c-1.14 0.612-1.164 0.624-1.32 0.624-0.132 0-0.216-0.132-0.216-0.336 0-0.12 0.036-0.348 0.108-0.612 0.612-2.52 0.732-3 0.732-3.096 0-0.072-0.06-0.12-0.144-0.12-0.204 0-0.912 0.396-1.896 1.056l-0.024 0.336c0.708-0.384 0.768-0.408 0.876-0.408 0.096 0 0.144 0.072 0.144 0.216 0 0.156-0.036 0.324-0.216 1.008-0.564 2.1-0.564 2.1-0.564 2.4 0 0.288 0.12 0.48 0.288 0.48 0.204 0 0.528-0.156 1.164-0.564 0.228-0.144 0.456-0.288 0.684-0.444 0.108-0.06 0.216-0.132 0.336-0.204l0.048-0.336zm-7.0555 0.396c-0.012 0.108-0.024 0.204-0.024 0.276 0 0.516 0.36 0.876 0.888 0.876 0.3715 0 0.8875-0.156 1.2715-0.372 0.708-0.408 1.14-1.02 1.14-1.62 0-0.444-0.084-0.54-0.756-0.96-0.408-0.264-0.576-0.492-0.576-0.804 0-0.408 0.348-0.768 0.756-0.768 0.276 0 0.48 0.132 0.744 0.468 0.408-0.396 0.408-0.396 0.564-0.624-0.24-0.288-0.468-0.408-0.804-0.408-0.876 0-2.004 1.044-2.004 1.836 0 0.372 0.192 0.66 0.648 0.984 0.6 0.42 0.684 0.528 0.684 0.828 0 0.432-0.552 0.936-1.02 0.936-0.264 0-0.468-0.144-0.5875-0.408-0.084-0.18-0.108-0.36-0.12-0.768-0.132 0.096-0.228 0.156-0.276 0.192-0.096 0.06-0.204 0.12-0.312 0.192 0 0-0.096 0.06-0.216 0.144z"
+  />
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >ftsignature</dc:title
+        >
+        <dc:date
+          >2011-01-31T02:06:46</dc:date
+        >
+        <dc:description
+          >Originally uploaded by Danny Allen for OCAL 0.18 this icon is part of the flat theme</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/114361/ftsignature-by-anonymous</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >Anonymous</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >flat</rdf:li
+            >
+            <rdf:li
+              >icon</rdf:li
+            >
+            <rdf:li
+              >theme</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>

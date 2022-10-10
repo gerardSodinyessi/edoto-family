@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cycleCalendrier</title>
+    <link rel="stylesheet" href="evo-calendar.midnight-blue.min.css" />
+    <link rel="stylesheet" href="evo-calendar.min.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../../component/assets/images/logonavigator.png"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment-with-locales.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Open modal on page load
+
+        // Close modal on button click
+        $(".btn").click(function () {
+          $("#myModal").modal("hide");
+        });
+        const UserConnectIdacessHospitalY = localStorage.getItem("storageName");
+        //alert(UserConnectIdacessHospitalY);
+        if (!UserConnectIdacessHospitalY) {
+          window.location.href = "../../index.html";
+        }
+        document
+          .getElementById("deletMyCalendara")
+          .addEventListener("click", function () {
+            setTimeout(() => {
+              location.reload();
+            }, 500);
+          });
+      });
+    </script>
+  </head>
+  <body style="margin: 5vh" class="areaIDm">
+    <button
+      type="button"
+      class="btn btn-danger"
+      id="deletMyCalendarCall"
+      onclick="deletMyCalendarCallf() "
+    >
+      Retour
+    </button>
+
+    <!--<marquee behaviour="alternative" direction="right" id="MyCalendarMar"
+      >Bonjour</marquee
+    >-->
+
+    <button type="button" class="btn btn-danger" id="deletMyCalendara">
+      Supprimer
+    </button>
+    <style>
+      #deletMyCalendara {
+        position: absolute;
+        top: 3px;
+        right: 0px;
+      }
+      #deletMyCalendarCall {
+        position: absolute;
+        top: 3px;
+        left: 0px;
+      }
+      #MyCalendarMar {
+        position: absolute;
+        top: 3px;
+      }
+      .areaIDm {
+        background: #4e54c8 !important;
+        background: -webkit-linear-gradient(
+          to left,
+          #8f94fb,
+          #4e54c8
+        ) !important;
+      }
+    </style>
+    <div class="hero">
+      <div
+        id="calendar"
+        style="margin-top: 45px !important"
+        data-aos="zoom-in"
+        data-aos-duration="1000"
+      ></div>
+      <div class="bs-example">
+        <div
+          id="myModal"
+          class="modal fade"
+          tabindex="-1"
+          style="margin-top: 165px"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" style="display: none">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <p style="display: none">Votre Cycle menstruel.</p>
+                <div class="form-check form-switch" style="margin-bottom: 19px">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckDefault"
+                    style="margin-bottom: 10px; display: none"
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Confirmer la date du début de votre cycle</label
+                  >
+                </div>
+                <input
+                  type="date"
+                  name=""
+                  id="laDuréeDuCycle"
+                  style="display: none"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="validerJourCycle"
+                >
+                  Valider
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----deuxième modale------->
+        <div
+          id="myModal2"
+          class="modal fade"
+          tabindex="-1"
+          style="margin-top: 165px"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header" style="display: none">
+                <h5 class="modal-title"></h5>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <p style="display: none">Votre Cycle menstruel.</p>
+                <div class="form-check form-switch" style="margin-bottom: 19px">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCheckDefault"
+                    style="margin-bottom: 10px; display: none"
+                  />
+                  <label class="form-check-label" for="flexSwitchCheckDefault"
+                    >Confirmer la date de fin de votre cycle</label
+                  >
+                </div>
+                <input
+                  type="date"
+                  name=""
+                  id="laDuréeDuCycle"
+                  style="display: none"
+                />
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  id="validerJourCycle2"
+                >
+                  Valider
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+      // Initialize evo-calendar in your script file or an inline <script> tag
+      $(document).ready(function () {
+        // activé le div choix fin cycle
+        var validerJourCycle = document.getElementById("validerJourCycle");
+        $("#calendar").evoCalendar({
+          language: "fr",
+          theme: "Midnight Blue",
+        });
+        var tableaui1 = [];
+        var tableauiDateCycle = [];
+        $("#calendar").on("selectDate", function (event, newDate, oldDate) {
+          tableaui1.push(newDate);
+          console.log(tableaui1);
+          if (tableaui1.length === 1) {
+            $("#myModal").modal("show");
+            //add event start cycle
+            $("#calendar").evoCalendar("addCalendarEvent", [
+              {
+                id: "kNybja6",
+                name: "Début de mon cycle",
+                badge: "02/13 - 02/15", // Event badge (optional)
+                description: "Votre cycle menstruel a commencé ce  " + newDate,
+                date: newDate,
+                type: "birthday",
+                color: "#63d867",
+              },
+            ]);
+          } else {
+            $("#myModal2").modal("show");
+            var validerJourCycle2 =
+              document.getElementById("validerJourCycle2");
+            validerJourCycle2.addEventListener("click", function () {
+              $("#myModal2").modal("hide");
+              //calcul de la #ce des dates
+              function addDaysToDate(date, days) {
+                var res = new Date(date);
+                res.setDate(res.getDate() + days);
+                return res;
+              }
+              var now = new Date(); // Augest 20, 2020
+              //diff entre jour
+              var now = new Date(tableaui1[0]);
+              var date2 = new Date(tableaui1[1]);
+              var Diff_temps = date2.getTime() - now.getTime();
+              var Diff_jours = Diff_temps / (1000 * 3600 * 24);
+              var tab = [];
+              tab.push(Math.round(Diff_jours));
+
+              if (Math.round(Diff_jours) >= 20 && tableaui1.length === 2) {
+                tableauiDateCycle.push(Math.round(Diff_jours));
+                $("#calendar").evoCalendar("removeCalendarEvent", "kNybja6");
+
+                var momm = moment(new Date(tableaui1[1]))
+                  .subtract(14, "days")
+                  .calendar();
+                var momm1 = moment(new Date(tableaui1[1]))
+                  .subtract(15, "days")
+                  .calendar();
+                var momm2 = moment(new Date(tableaui1[1]))
+                  .subtract(16, "days")
+                  .calendar();
+                var momm3 = moment(new Date(tableaui1[1]))
+                  .subtract(17, "days")
+                  .calendar();
+
+                $("#calendar").evoCalendar("addCalendarEvent", [
+                  {
+                    // Début du cycle
+                    id: "kNybja6",
+                    name: "Début de mon cycle",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description:
+                      "Votre cycle menstruel est de " +
+                      Math.round(Diff_jours) +
+                      " jours",
+                    date: tableaui1[0],
+                    type: "birthday",
+                    color: "#240dee",
+                  },
+                  {
+                    // Jour d'ovulation
+                    id: "kNybja6786786OI",
+                    name: "Ovulation",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description: momm + " est votre jour d'ovulation ",
+                    date: momm,
+                    type: "birthday",
+                    color: "#f82249",
+                  },
+                  {
+                    // Jour d'ovulation
+                    id: "kNybja6786786OI2",
+                    name: "Période d'ovulation",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description:
+                      momm +
+                      " est la date propice que vous pouvez tomber enceinte, si vous tenez de rapport sexuel",
+                    date: momm,
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+
+                  {
+                    id: "kNybja6786234ER",
+                    name: "Période d'ovulation",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description:
+                      momm1 +
+                      " est la date propice que vous pouvez tomber enceinte, si vous tenez de rapport sexuel",
+                    date: momm1,
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+                  {
+                    id: "kNybja678667676?",
+                    name: "Période d'ovulation",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description:
+                      momm2 +
+                      " est la date propice que vous pouvez tomber enceinte, si vous tenez de rapport sexuel",
+                    date: momm2,
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+                  {
+                    id: "kNybja6786§§§§",
+                    name: "Ovulation",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description:
+                      momm3 +
+                      " est la date propice que vous pouvez tomber enceinte, si vous tenez de rapport sexuel",
+                    date: momm3,
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+                  {
+                    id: "kNybjNNJJUUa6hd",
+                    name: "Période d'ovulation",
+                    description:
+                      addDaysToDate(momm, 1) +
+                      " est la date propice que vous pouvez tomber enceinte, si vous tenez de rapport sexuel",
+                    date: addDaysToDate(momm, 1),
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+                  {
+                    id: "kWSDREZNybja6hd",
+                    name: "Période d'ovulation",
+                    description:
+                      addDaysToDate(momm, 2) +
+                      " est la date propice que vous pouvez tomber enceinte, si vous tenez de rapport sexuel",
+                    date: addDaysToDate(momm, 2),
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+                  {
+                    id: "kNybja6hd",
+                    name: "Période d'ovulation",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description:
+                      addDaysToDate(momm, 3) +
+                      " est la date propice que vous pouvez tomber enceinte, si vous tenez de rapport sexuel",
+                    date: addDaysToDate(momm, 3),
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+                  {
+                    id: "kNybja6&éQSDE",
+                    name: "Fin de votre cycle",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    date: tableaui1[1], // Date range
+                    description:
+                      tableaui1[1] + " est la date de la fin de votre cycle", // Event description (optional)
+                    type: "event",
+                    color: "#fc0000", // Event custom color (optional)
+                  },
+                  {
+                    id: "kNybja6&éNJUYT",
+                    name: "Cycle en cours",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    date: [now, tableaui1[1]], // Date range
+                    description: "Votre cycle est actif en cours", // Event description (optional)
+                    type: "event",
+                    color: "#63d867", // Event custom color (optional)
+                  },
+                ]);
+                tableaui1 = [];
+              } else {
+                console.log(
+                  "désolé, veillez vérifier la date de votre fin  de cycle"
+                );
+              }
+              if (tableauiDateCycle.length === 10) {
+                //recherche du min et max dans le tableau tableauiDateCycle
+                const min = (tableauiDateCycle) =>
+                  tableauiDateCycle.reduce((x, y) => Math.min(x, y));
+                const max = (tableauiDateCycle) =>
+                  tableauiDateCycle.reduce((x, y) => Math.max(x, y));
+                console.log("Min:", min(tableauiDateCycle));
+                console.log("Max:", max(tableauiDateCycle));
+
+                //manipuler les min dates
+                var mindate = min(tableauiDateCycle);
+                var now = new Date();
+                var an = now.getFullYear();
+                var mois = now.getMonth();
+                const event = new Date(an, mois, mindate);
+                console.log("Diane mon amour " + event.toDateString());
+
+                //manipuler les max dates
+                var maxdate = max(tableauiDateCycle);
+                const eventMax = new Date(an, mois, maxdate);
+                $("#calendar").evoCalendar("addCalendarEvent", [
+                  {
+                    // Début du cycle
+                    id: "kNybja6",
+                    name: "Début de mon cycle",
+                    badge: "02/13 - 02/15", // Event badge (optional)
+                    description:
+                      "Votre cycle menstruel est de type irrégulier. Après votre essaie de neuf mois, votre période d'ovulation est de " +
+                      mindate +
+                      " à " +
+                      maxdate +
+                      "de chaque mois",
+                    date: [event, eventMax],
+                    type: "birthday",
+                    color: "#f88222",
+                  },
+                ]);
+              }
+            });
+          }
+          // getActiveDate
+          var active_date = $("#calendar").evoCalendar("getActiveDate");
+          var nowa = new Date();
+          var nowa1 = nowa.getFullYear();
+          console.log("je vois vois " + nowa1);
+        });
+
+        validerJourCycle.addEventListener("click", function () {
+          var now = new Date();
+          var NumberlaDuréeDuCycle =
+            document.getElementById("laDuréeDuCycle").value;
+          function addDaysToDate(date, days) {
+            var res = new Date(date);
+            res.setDate(res.getDate() + days);
+            return res;
+          }
+          var now = new Date(); // Augest 20, 2020
+          //diff entre jour
+          var now = new Date();
+          var date2 = new Date(NumberlaDuréeDuCycle);
+          var Diff_temps = date2.getTime() - now.getTime();
+          var Diff_jours = Diff_temps / (1000 * 3600 * 24);
+          var tab = [];
+          tab.push(Math.round(Diff_jours));
+          console.log(tab);
+          var momm = moment(new Date(NumberlaDuréeDuCycle))
+            .subtract(14, "days")
+            .calendar();
+          var momm1 = moment(new Date(NumberlaDuréeDuCycle))
+            .subtract(15, "days")
+            .calendar();
+          var momm2 = moment(new Date(NumberlaDuréeDuCycle))
+            .subtract(16, "days")
+            .calendar();
+          var momm3 = moment(new Date(NumberlaDuréeDuCycle))
+            .subtract(17, "days")
+            .calendar();
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,298 @@
+/*********webcamip**********/
+.webcamipclassi {
+  display: block;
+  position: relative;
+  width: 125vh;
+  height: 100vh;
+  z-index: 990;
+  pointer-events: none;
+  margin: auto;
+}
+
+/*********webcamip**********/
+.webcamipclass {
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  width: 25vh;
+  height: 25vh;
+  z-index: 9999;
+  bottom: 10vh;
+  right: 2vh;
+}
+
+.cameraControls {
+  position: absolute;
+  bottom: 2vh;
+  width: 100%;
+  z-index: 99999;
+  background: transparent;
+  opacity: 0.7;
+  padding: 5px;
+}
+
+#webcamip2 {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 100vh;
+  z-index: 990;
+  pointer-events: none;
+  margin: auto;
+}
+
+#material-icons1 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons2 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons3 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons4 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons5 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons1call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons2call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons3call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons4call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#cameraControls {
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+  z-index: 99999;
+  background: transparent;
+  opacity: 0.7;
+  padding: 5px;
+}
+
+#material-icons5call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#canvasip {
+  background-color: transparent;
+  position: absolute;
+  width: auto;
+  height: 100vh;
+  z-index: 9999;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 375px) {
+  #logocalling {
+    margin-left: 22px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #vidoaOp {
+    margin-left: 22px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #wwebcam {
+    margin-left: 30px !important;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .form-control.webcam-start {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cameraControls {
+    bottom: 2vh;
+    left: 10vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webcamipclass {
+    bottom: 25vh;
+    right: 0;
+    width: 15vh !important;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #lesicons {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  #lesicons {
+    margin-left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #webcamip {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
+  .form-control.webcam-on {
+    top: 17vh;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-control.webcam-on {
+    top: 16vh;
+    left: 8vw;
+  }
+}
+
+#sig-canvas {
+  border: 2px dotted #cccccc;
+  border-radius: 15px;
+  cursor: crosshair;
+}
+
+@media screen and (max-width: 375px) {
+  #buttoncanvas {
+    margin-left: 40px !important;
+  }
+  #canvassignup {
+    margin-left: 25px !important;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  #buttoncanvas {
+    margin-left: 55px !important;
+  }
+  #canvassignup {
+    margin-left: 0px !important;
+  }
+}
+
+.dispoNibal {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+.dispoNibalm {
+  position: absolute;
+  top: 2px;
+  right: 0px;
+}
+.dispoNibalme {
+  position: absolute;
+  top: 3px;
+  right: 0px;
+}
+.dispoNibalj {
+  position: absolute;
+  top: 4px;
+  right: 0px;
+}
+.dispoNibalv {
+  position: absolute;
+  top: 5px;
+  right: 0px;
+}
+.dispoNibals {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+}
+.dispoNibald {
+  position: absolute;
+  top: 7px;
+  right: 0px;
+}

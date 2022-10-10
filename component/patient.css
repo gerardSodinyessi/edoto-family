@@ -1,0 +1,428 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+/*********webcamip**********/
+.webcamipclassi {
+  display: block;
+  position: relative;
+  width: 125vh;
+  height: 100vh;
+  z-index: 990;
+  pointer-events: none;
+  margin: auto;
+}
+
+/*********webcamip**********/
+.webcamipclass {
+  background-color: transparent;
+  position: absolute;
+  cursor: pointer;
+  width: 25vh;
+  height: 25vh;
+  z-index: 9999;
+  bottom: 10vh;
+  right: 2vh;
+}
+
+.cameraControls {
+  position: absolute;
+  bottom: 2vh;
+  width: 100%;
+  z-index: 99999;
+  background: transparent;
+  opacity: 0.7;
+  padding: 5px;
+}
+
+#cameraControls {
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+  z-index: 99999;
+  background: transparent;
+  opacity: 0.7;
+  padding: 5px;
+}
+
+#webcamip2 {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 100vh;
+  z-index: 990;
+  pointer-events: none;
+  margin: auto;
+}
+
+#material-icons1 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons2 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons3 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons4 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons5 {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons1call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons2call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons3call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons4call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#material-icons5call {
+  width: 100px;
+  font-size: 24px !important;
+  color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+#canvasip {
+  background-color: transparent;
+  position: absolute;
+  width: auto;
+  height: 100vh;
+  z-index: 9999;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 420px) {
+  .form-control.webcam-start {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #wwebcam {
+    margin-left: 30px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #logocalling {
+    margin-left: 22px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #aligervousimgabout {
+    margin-left: 39px !important;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #vidoaOp {
+    margin-left: 22px !important;
+  }
+}
+@media screen and (max-width: 420px) {
+  .form-control.webcam-start {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cameraControls {
+    bottom: 2vh;
+    left: 10vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .webcamipclass {
+    bottom: 25vh;
+    right: 0;
+    width: 15vh !important;
+    height: 15vh;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #lesicons {
+    margin-left: 0px !important;
+  }
+}
+
+@media screen and (max-width: 867px) {
+  #lesicons {
+    margin-left: 20px !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #webcamip {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 420px) and (max-width: 767px) {
+  .form-control.webcam-on {
+    top: 17vh;
+    left: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .form-control.webcam-on {
+    top: 16vh;
+    left: 8vw;
+  }
+}
+
+/*****Les Cardes des hopitales*****/
+.tilesWrap {
+  padding: 0;
+  margin: 2px auto;
+  list-style: none;
+  text-align: center;
+  margin-right: 20px;
+}
+.tilesWrap li {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 10px 10px;
+  vertical-align: top;
+  margin: 10px;
+  font-family: "helvetica", san-serif;
+  min-height: 25vh;
+  background-color: rgb(255, 255, 255);
+  background-color: rgba(255, 252, 252, 0.9);
+  box-shadow: 10px 15px;
+
+  text-align: left;
+  border-radius: 5%;
+}
+.tilesWrap li h2 {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.2;
+  right: 10px;
+}
+.tilesWrap li h3 {
+  font-size: 20px;
+  color: #f82249;
+  margin-bottom: 5px;
+}
+.tilesWrap li p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #b7b7b7;
+  margin-top: 5px;
+}
+.tilesWrap li .Payooner {
+  background: transparent;
+  border: 1px solid #b7b7b7;
+  padding: 10px 20px;
+  color: #0d1472;
+  border-radius: 3px;
+  margin-left: 35px;
+}
+.margiNleftClassP {
+  margin-left: 19vh;
+}
+.margiNleftClassWhat {
+  margin-right: 50vh;
+}
+.tilesWrap li .consultingId {
+  background: transparent;
+  border: 1px solid #b7b7b7;
+  padding: 10px 20px;
+  color: #0d1472;
+  border-radius: 3px;
+  margin-left: 35px;
+}
+.tilesWrap li button:before {
+  content: "";
+
+  height: 100%;
+  width: 120%;
+  background: #b7b7b7;
+  top: 0;
+  opacity: 0;
+  left: -140px;
+  border-radius: 0 20px 20px 0;
+  z-index: -1;
+  transition: all 0.3s ease-in-out;
+}
+.tilesWrap li button:hover {
+  color: #f1f3f5;
+  border: 2px solid #f1f3f5;
+}
+.tilesWrap li button:hover:before {
+  left: 0;
+  opacity: 1;
+}
+.tilesWrap li:hover h2 {
+  opacity: 0.6;
+}
+
+.tilesWrap li:before {
+  content: "";
+
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  z-index: -1;
+  background: #fff;
+  transform: skew(2deg, 2deg);
+}
+.tilesWrap li:after {
+  content: "";
+  width: 40%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(230, 6, 6, 0.63);
+}
+.child {
+  align-self: flex-end;
+  height: 34vh;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+  margin-left: 3vh;
+}
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-80px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
