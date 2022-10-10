@@ -16,7 +16,7 @@ function append(parent, el) {
   return parent.appendChild(el);
 }
 var bigTableTake = [];
-function onBlockIF() {
+if (UserConnectIdToBuy) {
   const div = document.getElementById("autorsIdProduct");
   fetch("https://edotofamilyapi.com/api/products")
     .then((resp) => resp.json())
@@ -27,22 +27,22 @@ function onBlockIF() {
         bigTableTake.push(author);
         var section = createNode("section");
         section.innerHTML = `
-      <div class="col-md-12 col-lg-12"> 
-      <div class="product-wrapper mb-45 text-center"> 
-        <div class="product-img"> 
-          <a href="#" data-abc="true"> <img src="${author.image} " alt="" class="ImgPlanning"> </a>	<span class="margiNleftClass">${author.name} <i class="fa fa-rupee" style="color: red;"></i>${author.product_price} fcfa</span> 
-          <div class="product-action">
-          <div class="buttonSearchID"id="${author.id}">
-          <button class="btn btn-danger"><div class="product-action-style authorPriceProduct" id="${author.product_price}"style="color:red;"> 
-            <i class="fa fa-shopping-cart"></i>  Acheter  ${author.name} 
-            </div></button>
-            </div>
+        <div class="col-md-12 col-lg-12"> 
+        <div class="product-wrapper mb-45 text-center"> 
+          <div class="product-img"> 
+            <a href="#" data-abc="true"> <img src="${author.image} " alt="" class="ImgPlanning"> </a>	<span class="margiNleftClass">${author.name} <i class="fa fa-rupee" style="color: red;"></i>${author.product_price} fcfa</span> 
+            <div class="product-action">
+            <div class="buttonSearchID"id="${author.id}">
+            <button class="btn btn-danger"><div class="product-action-style authorPriceProduct" id="${author.product_price}"style="color:red;"> 
+              <i class="fa fa-shopping-cart"></i>  Acheter  ${author.name} 
+              </div></button>
+              </div>
+            </div> 
           </div> 
         </div> 
-      </div> 
-    </div>
-  
-      `;
+      </div>
+    
+        `;
 
         append(div, section);
       });
