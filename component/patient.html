@@ -4114,7 +4114,7 @@
 	<script src="../abonnements.js"></script>
 	<script src="getUpdateProfil.js"></script>
 	<script src="getVisionlink.js"></script>
-	<script src="serveurs/serveur.jS"></script>
+	<script src="./serveurs/serveur.js"></script>
 	<script src="loginPatient.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 	<script src="patient.js"></script>
@@ -4191,69 +4191,6 @@ if(UserConnectIdToBuyI){
 };
 
 }
-
-function jeveuxtoulescentresabpf() {
-  function createNode(element) {
-    return document.createElement(element);
-  }
-
-  function append(parent, el) {
-    return parent.appendChild(el);
-  }
-
-  const div = document.getElementById("autorsId");
-  const divaHy = document.getElementById("myDropdownIdWhatyY");
-  const url = "https://edotofamilyapi.com/medecin/";
-
-  fetch(url)
-    .then((resp) => resp.json())
-    .then(function (data) {
-      let authors = data.results;
-      //console.log('MON CORIS BAS ' + authors);
-      return authors.map(function (author) {
-        console.log("MON CORIS BAS " + author);
-        let p = createNode("p");
-        let a = createNode("a");
-        a.innerHTML = `
-        <div
-        class="wcs_popup_person"
-        data-number="${author.tel}"
-        data-availability='{ "monday":"08:30-18:30", "tuesday":"08:30-18:30", "wednesday":"08:30-18:30", "thursday":"08:30-18:30", "friday":"08:30-18:30" }'
-        style="margin-bottom: 6vh;">
-        <div class="wcs_popup_person_img">
-        <img src="./assets/images/lesLogosCentre.png" alt="" />
-        </div>
-        <div class="wcs_popup_person_content">
-        <div class="wcs_popup_person_name">${author.username} </div>
-        <div class="wcs_popup_person_description"></div>
-        <div class="wcs_popup_person_status">I'm Online</div>
-        </div>
-      </div>
-        `;
-
-        p.innerHTML = `
-        <ul class="tilesWrap">
-        <li>
-          
-          <h3> ${author.username}</h3>
-          
-            <img src="assets/images/lesLogosCentre.png" alt="" class="child bounce">
-          
-          <button class="Payooner" id="${author.id}">Payer</button> <button class="consultingId" id="${author.id}" onclick="consultingIdClass(this.id)">consulter</button> 
-        </li>
-      </ul>
-    
-        `;
-
-        append(div, p);
-        append(divaHy, a);
-      });
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
-}
-
 	</script>
 	<!-- End js -->
 </body>
