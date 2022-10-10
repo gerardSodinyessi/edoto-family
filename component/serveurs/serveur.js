@@ -1,4 +1,5 @@
-function jeveuxtoulescentresabpf() {
+const UserConnectId = localStorage.getItem("storageName");
+if (UserConnectId) {
   function createNode(element) {
     return document.createElement(element);
   }
@@ -71,7 +72,6 @@ window.onload = console.log(
     localStorage.getItem("storageName")
 );
 // c'est id de la personne connecté
-const UserConnectId = localStorage.getItem("storageName");
 function postDataProfil() {
   var last_name = document.getElementById("recipient-last_name").value;
   var first_name = document.getElementById("recipient-first_name").value;
