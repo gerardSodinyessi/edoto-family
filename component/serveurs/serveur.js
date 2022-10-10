@@ -59,9 +59,11 @@ if (UserConnectId) {
     .catch(function (error) {
       console.log(error);
     });
+
   // function hospital data
 
-  fetch(`https://edotofamilyapi.com/patient/${UserConnectId}/`, {
+  {
+    /** *  fetch(`https://edotofamilyapi.com/patient/${UserConnectId}/`, {
     method: "GET",
     headers: {
       Accept: "application/json",
@@ -94,7 +96,8 @@ if (UserConnectId) {
     })
     .catch(function (error) {
       console.log(error);
-    });
+    });**/
+  }
 }
 
 var a = parent.document.URL.substring(
