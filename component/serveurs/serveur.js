@@ -1,26 +1,25 @@
-function jeveuxtoulescentresabpf() {
-  function createNode(element) {
-    return document.createElement(element);
-  }
+function createNode(element) {
+  return document.createElement(element);
+}
 
-  function append(parent, el) {
-    return parent.appendChild(el);
-  }
+function append(parent, el) {
+  return parent.appendChild(el);
+}
 
-  const div = document.getElementById("autorsId");
-  const divaHy = document.getElementById("myDropdownIdWhatyY");
-  const url = "https://edotofamilyapi.com/medecin/";
+const div = document.getElementById("autorsId");
+const divaHy = document.getElementById("myDropdownIdWhatyY");
+const url = "https://edotofamilyapi.com/medecin/";
 
-  fetch(url)
-    .then((resp) => resp.json())
-    .then(function (data) {
-      let authors = data.results;
-      //console.log('MON CORIS BAS ' + authors);
-      return authors.map(function (author) {
-        console.log("MON CORIS BAS " + author);
-        let p = createNode("p");
-        let a = createNode("a");
-        a.innerHTML = `
+fetch(url)
+  .then((resp) => resp.json())
+  .then(function (data) {
+    let authors = data.results;
+    //console.log('MON CORIS BAS ' + authors);
+    return authors.map(function (author) {
+      console.log("MON CORIS BAS " + author);
+      let p = createNode("p");
+      let a = createNode("a");
+      a.innerHTML = `
         <div
         class="wcs_popup_person"
         data-number="${author.tel}"
@@ -37,7 +36,7 @@ function jeveuxtoulescentresabpf() {
       </div>
         `;
 
-        p.innerHTML = `
+      p.innerHTML = `
         <ul class="tilesWrap">
         <li>
           
@@ -51,14 +50,13 @@ function jeveuxtoulescentresabpf() {
     
         `;
 
-        append(div, p);
-        append(divaHy, a);
-      });
-    })
-    .catch(function (error) {
-      console.log(error);
+      append(div, p);
+      append(divaHy, a);
     });
-}
+  })
+  .catch(function (error) {
+    console.log(error);
+  });
 
 var a = parent.document.URL.substring(
   parent.document.URL.indexOf("?"),
