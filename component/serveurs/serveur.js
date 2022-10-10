@@ -8,7 +8,7 @@ function append(parent, el) {
 
 const div = document.getElementById("autorsId");
 const divaHy = document.getElementById("myDropdownIdWhatyY");
-const url = "https://edotofamilyapi.com/api/auth/medecin/";
+const url = "https://edotofamilyapi.com/medecin/";
 
 fetch(url)
   .then((resp) => resp.json())
