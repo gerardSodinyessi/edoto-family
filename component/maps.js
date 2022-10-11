@@ -16,8 +16,7 @@ function append(parent, el) {
   return parent.appendChild(el);
 }
 var bigTableTake = [];
-const idUserTakeFor = true;
-if (idUserTakeFor) {
+function openAllPharmaciCotonou() {
   const div = document.getElementById("autorsIdProduct");
   fetch("https://edotofamilyapi.com/api/products")
     .then((resp) => resp.json())
@@ -79,9 +78,6 @@ if (idUserTakeFor) {
     var authorPriceProduc = document.querySelectorAll(".authorPriceProduct");
     authorPriceProduc.forEach((Px) => {
       Px.addEventListener("click", function () {
-        $(".chat-user-info").removeClass("show");
-        document.getElementById("AllHospitalBenInfo").style.display = "none";
-        document.getElementById("AllHospitalBen").style.display = "block";
         console.log(Px.id);
         var priceProd = Px.id;
         document.getElementById(
