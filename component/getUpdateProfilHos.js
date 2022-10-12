@@ -28,7 +28,7 @@ function postDataProfilHospi() {
         console.log(last_nameH, first_nameH, lastC);
       } else {
         var result = response.json();
-        console.log(result);
+        //console.log(result);
         console.log("PAS DE ERROR");
         document.getElementById("recipient-last_nameH").value = "";
         document.getElementById("recipient-first_nameH").value = "";
@@ -51,7 +51,7 @@ const urlyx = `https://edotofamilyapi.com/api/auth/medecin/${storageNameIdH}/`;
 fetch(urlyx)
   .then((resp) => resp.json())
   .then(function (data) {
-    console.log(data.id);
+    //console.log(data.id);
     let span = createNode("span");
     span.innerHTML = `
       <div class="profile-detail" style="padding-bottom: 60px;">

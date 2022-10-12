@@ -74,7 +74,7 @@ fetch(urlk)
 
 function tackecommandsIdClass(checked) {
   var now = new Date();
-  console.log(checked);
+  //console.log(checked);
   fetch("https://edotofamilyapi.com/api/messages/", {
     method: "POST",
     headers: {
@@ -90,7 +90,7 @@ function tackecommandsIdClass(checked) {
     }),
   }).then(function (response) {
     if (response.ok) {
-      console.log(response);
+      //console.log(response);
       document.getElementById("idHospitalShowJitisi").style.display = "none";
       document.getElementById("idHospitalShow").style.display = "block";
 

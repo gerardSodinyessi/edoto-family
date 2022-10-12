@@ -33,7 +33,7 @@ function postDataHospital() {
         }, 6000);
       } else {
         var result = response.json();
-        console.log(result);
+        //  console.log(result);
         document.getElementById("usernameHospital").value = "";
         document.getElementById("emailHospital").value = "";
         document.getElementById("passwordHospital").value = "";

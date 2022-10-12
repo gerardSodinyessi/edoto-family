@@ -14,7 +14,7 @@ fetch(url)
   .then((resp) => resp.json())
   .then(function (data) {
     var msg = data.messages_received;
-    console.log("les medecins" + data);
+    //  console.log("les medecins" + data);
     return msg.map(function (msga) {
       let span = createNode("span");
       span.innerHTML = `
@@ -120,7 +120,7 @@ function tackesenderIdClass(checked) {
         }),
       }).then(function (response) {
         if (response.ok) {
-          console.log(response);
+          //  console.log(response);
           document.getElementById("idHospitalShowJitisi").style.display =
             "none";
           document.getElementById("idHospitalShow").style.display = "block";

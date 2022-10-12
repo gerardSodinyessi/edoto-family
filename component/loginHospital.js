@@ -27,7 +27,7 @@ function getDatahopital() {
         response.json().then((data) => {
           //var IdUserConnectH = data.access;
           var IdUserConnectIdH = data.user;
-          console.log(IdUserConnectIdH);
+          //  console.log(IdUserConnectIdH);
           //console.log(theTableUser[0]);
           //console.log(lol);
           userTableDataH.push(IdUserConnectIdH);
@@ -40,9 +40,9 @@ function getDatahopital() {
             setTimeout(() => {
               document.getElementById("exampleAnimatedsuccessH").style.display =
                 "none";
-              console.log(userTableDataH);
+              //  console.log(userTableDataH);
               userTableDataH.forEach((q) => {
-                console.log("kolokolo" + q.id);
+                //    console.log("kolokolo" + q.id);
                 var getInputH = q.id;
                 localStorage.setItem("storageNameH", getInputH);
                 window.location.href = `indexMonDocteur.html`;

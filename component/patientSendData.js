@@ -1,7 +1,7 @@
 var allPharmacyIdVar = document.querySelectorAll(".allClassIprodoctClik");
 allPharmacyIdVar.forEach((x) => {
   x.addEventListener("click", function () {
-    console.log(x.id);
+    // console.log(x.id);
     //modaleAceptFacturactionMOOW id de moow modale
 
     const objetAllproduct = [
@@ -56,7 +56,7 @@ allPharmacyIdVar.forEach((x) => {
       var tableobjetAllproduct = [];
       if (x.id === element.id) {
         tableobjetAllproduct.push(element.name, element.prix);
-        console.log(tableobjetAllproduct);
+        //   console.log(tableobjetAllproduct);
       }
     });
   });

@@ -21,7 +21,7 @@ const urla = `https://edotofamilyapi.com/subscription_type/`;
 fetch(urla)
   .then((resp) => resp.json())
   .then(function (data) {
-    var result = data.results
+    var result = data.results;
     //abonnement basique
     diva.innerHTML = `
         <h3>${result[0].title} </h3>

@@ -15,7 +15,7 @@ fetch(urlS)
   .then((resp) => resp.json())
   .then(function (data) {
     var msgS = data.messages_sent;
-    console.log(msgS);
+    // console.log(msgS);
     return msgS.map(function (msgaS) {
       let li = createNode("li");
       li.innerHTML = `

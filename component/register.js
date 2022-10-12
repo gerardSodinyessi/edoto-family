@@ -26,7 +26,7 @@ function postData() {
         document.getElementById("tel").value = "";
       } else {
         var result = response.json();
-        console.log(result);
+        //  console.log(result);
         document.getElementById("username").value = "";
         document.getElementById("email").value = "";
         document.getElementById("password").value = "";

@@ -28,7 +28,7 @@ function getData() {
           //var IdUserConnect = data.access;
           var IdUserConnectId = data.user;
           //console.log(IdUserConnect);
-          console.log(IdUserConnectId);
+          //  console.log(IdUserConnectId);
           userTableData.push(IdUserConnectId);
           if (IdUserConnectId.role === "patient") {
             document.getElementById("exampleAnimatedsuccess").style.display =
@@ -41,9 +41,9 @@ function getData() {
             setTimeout(() => {
               document.getElementById("exampleAnimatedsuccess").style.display =
                 "none";
-              console.log(userTableData);
+              // console.log(userTableData);
               userTableData.forEach((q) => {
-                console.log("kolokolo" + q.id);
+                //  console.log("kolokolo" + q.id);
                 var getInput = q.id;
                 localStorage.setItem("storageName", getInput);
                 window.location.href = `patient.html`;

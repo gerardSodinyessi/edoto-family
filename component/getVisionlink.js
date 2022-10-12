@@ -25,7 +25,7 @@ fetch(urlx)
   .then((resp) => resp.json())
   .then(function (data) {
     let authorsx = data.messages_received;
-    console.log(authorsx);
+    //console.log(authorsx);
     return authorsx.map(function (authorx) {
       let li = createNode("li");
       li.innerHTML = `
@@ -87,7 +87,7 @@ function getDatahopital() {
         }, 5000);
       } else {
         var result = response.json();
-        console.log(result);
+        //  console.log(result);
         document.getElementById("exampleAnimatedsuccessH").style.display =
           "block";
         document.getElementById("usernameloginH").value = "";

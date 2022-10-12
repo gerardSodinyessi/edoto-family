@@ -22,7 +22,7 @@ function openAllPharmaciCotonou() {
     .then((resp) => resp.json())
     .then(function (data) {
       let authors = data.results;
-      console.log(authors);
+      //  console.log(authors);
       return authors.map(function (author) {
         bigTableTake.push(author);
         var section = createNode("section");
@@ -65,7 +65,7 @@ function openAllPharmaciCotonou() {
     var consultingId = document.querySelectorAll(".Payooner");
     consultingId.forEach((x) => {
       x.addEventListener("click", function () {
-        console.log(x.id);
+        //   console.log(x.id);
         var sellerId = x.id;
         seller.push(sellerId);
         $("#modaleAceptFacturactionMOOW").modal({
@@ -78,7 +78,7 @@ function openAllPharmaciCotonou() {
     var authorPriceProduc = document.querySelectorAll(".authorPriceProduct");
     authorPriceProduc.forEach((Px) => {
       Px.addEventListener("click", function () {
-        console.log(Px.id);
+        //  console.log(Px.id);
         var priceProd = Px.id;
         document.getElementById(
           "NameProductId"
@@ -92,10 +92,10 @@ function openAllPharmaciCotonou() {
             var takeNumPro = document.getElementById(
               "inputGroupSelect04vali"
             ).value;
-            console.log(takeNumPro);
+            //   console.log(takeNumPro);
             takeNumProTable.push(takeNumPro);
             const sommeT = takeNumPro * priceProd;
-            console.log(sommeT);
+            //  console.log(sommeT);
             sommeproductW.push(sommeT);
             document.getElementById(
               "TotalProductId"
@@ -106,7 +106,7 @@ function openAllPharmaciCotonou() {
           .getElementById("uivantVotreOrdonnanceCkkiapay")
           .addEventListener("click", function () {
             const [sommeproducta] = sommeproductW.slice(-1);
-            console.log(sommeproducta);
+            //  console.log(sommeproducta);
             openKkiapayWidget({
               amount: `${sommeproducta} `,
               position: "center",
@@ -120,7 +120,7 @@ function openAllPharmaciCotonou() {
             addSuccessListener((response) => {
               //console.log(response);
               var trans = response.transactionId;
-              console.log(trans);
+              //  console.log(trans);
               if (trans) {
                 document.getElementById("IdAcueiApp2").style.display = "block";
                 document.getElementById("exampleModalCenter").style.display =
@@ -148,7 +148,7 @@ function openAllPharmaciCotonou() {
                   }),
                 }).then(function (response) {
                   if (response.ok) {
-                    console.log(response);
+                    //  console.log(response);
                   }
                 });
               } else {

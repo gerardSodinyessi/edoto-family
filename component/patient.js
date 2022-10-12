@@ -31,7 +31,7 @@ function voiceCalling() {
     keyboard: false,
   });
   $("#incomingVoiceCall").modal("hide");
-  console.log("ok les gars comment vas");
+  //  console.log("ok les gars comment vas");
 }
 //exchange class
 function exchangeclass() {
@@ -46,7 +46,7 @@ function exchangeclass2a() {
   $("#webcamip").addClass("webcamipclassi");
   $("#canvasad").removeClass("webcamipclassi");
   $("#canvasad").addClass("webcamipclass");
-  console.log("pourquoi");
+  //  console.log("pourquoi");
 }
 
 //appel video
@@ -76,7 +76,7 @@ function toutChatdoctorhide() {
         $(".bda-example-modal-lg").modal("hide");
         webcam.stop();
       };
-      console.log("webcam started");
+      //  console.log("webcam started");
     })
     .catch((err) => {
       console.log(err);
@@ -90,7 +90,7 @@ function toutChatdoctorhide() {
 function cacherLeboutonicon() {
   document.getElementById("material-icons2").style.display = "block";
   document.getElementById("material-icons1").style.display = "none";
-  console.log("je suis et toi");
+  //  console.log("je suis et toi");
 }
 
 function cacherLebouton1() {
@@ -116,7 +116,7 @@ function cacherLebouton1A() {
 function cacherLeboutoniconcall() {
   document.getElementById("material-icons2call").style.display = "block";
   document.getElementById("material-icons1call").style.display = "none";
-  console.log("je suis et toi");
+  //  console.log("je suis et toi");
 }
 
 function cacherLebouton1call() {
@@ -295,10 +295,10 @@ function mobilecheck() {
     navigator.userAgent.match(/BlackBerry/i) ||
     navigator.userAgent.match(/Windows Phone/i)
   ) {
-    console.log("je dois le faire");
+    //  console.log("je dois le faire");
     return true;
   } else {
-    console.log("je faire");
+    //  console.log("je faire");
     return false;
   }
 }
@@ -366,13 +366,13 @@ VideoPlanning.forEach((Q) => {
         var createUnNouveauP = document.getElementById("displayBlackVid##");
         ttableVido.push(element.balise);
         createUnNouveauP.innerHTML = ttableVido[0];
-        console.log(createUnNouveauP);
+        //   console.log(createUnNouveauP);
         document
           .getElementById("displayBlackVidClose")
           .addEventListener("click", function (id) {
             element.balise.id;
             $("#incomingVideoPlanning").modal("hide");
-            console.log(ttableVido);
+            //    console.log(ttableVido);
           });
       }
     });
@@ -384,7 +384,7 @@ var allPharmacyIdVar = document.querySelectorAll(".showAudioPlanning");
 allPharmacyIdVar.forEach((xid) => {
   xid.addEventListener("click", function () {
     document.getElementById("button-addonmic").style.display = "block";
-    console.log(xid.id);
+    // console.log(xid.id);
     const objetaAudio = [
       {
         id: "chat-first-tab",
@@ -453,7 +453,7 @@ allPharmacyIdVar.forEach((xid) => {
         ttableAudiotitle.push(element.title);
         var AllTitlePlan = document.getElementById("AllTitlePlan#");
         AllTitlePlan.innerHTML = element.title;
-        console.log(element.id);
+        //   console.log(element.id);
       }
     });
   });
@@ -472,7 +472,7 @@ VideoPlanning.forEach((Q) => {
 //function planning valider
 
 document.getElementById("AceptPlanning").addEventListener("click", function () {
-  console.log("ok tour le ppofkkfv");
+  //  console.log("ok tour le ppofkkfv");
   $("#incomingaliderplanning").modal({
     show: true,
     backdrop: "static",

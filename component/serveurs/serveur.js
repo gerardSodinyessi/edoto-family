@@ -18,7 +18,7 @@ if (UserConnectId) {
       let authors = data.results;
       //console.log('MON CORIS BAS ' + authors);
       return authors.map(function (author) {
-        console.log("MON CORIS BAS " + author);
+        //console.log("MON CORIS BAS " + author);
         let p = createNode("p");
         let a = createNode("a");
         a.innerHTML = `
@@ -105,11 +105,8 @@ var a = parent.document.URL.substring(
   parent.document.URL.length
 );
 var lastC = a.charAt(a.length - 1);
-console.log("vovovovovovov " + lastC);
-window.onload = console.log(
-  "je suis le id de ce lui qui est connecté " +
-    localStorage.getItem("storageName")
-);
+//console.log("vovovovovovov " + lastC);
+window.onload = console.log(localStorage.getItem("storageName"));
 // c'est id de la personne connecté
 function postDataProfil() {
   var last_name = document.getElementById("recipient-last_name").value;
@@ -140,7 +137,7 @@ function postDataProfil() {
         console.log(last_name, first_name, lastC);
       } else {
         var result = response.json();
-        console.log(result);
+        //console.log(result);
         console.log("PAS DE ERROR");
         document.getElementById("recipient-last_name").value = "";
         document.getElementById("recipient-first_name").value = "";
@@ -157,7 +154,7 @@ function postDataProfil() {
 // upDate Profil hospital
 // send consultation message
 function consultingIdClass(clicked) {
-  console.log("alert alert " + clicked);
+  //console.log("alert alert " + clicked);
   $("#modalConfirmMessageSend").modal({
     show: true,
     backdrop: false,
@@ -183,7 +180,7 @@ function consultingIdClass(clicked) {
       }),
     }).then(function (response) {
       if (response.ok) {
-        console.log(response);
+        //console.log(response);
         setTimeout(() => {
           window.location.reload();
           $("#modalConfirmMessageSendConfirm").modal({

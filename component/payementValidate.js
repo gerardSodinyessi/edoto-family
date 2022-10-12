@@ -22,7 +22,7 @@ function onBlockIF() {
     .then((resp) => resp.json())
     .then(function (data) {
       let authors = data.results;
-      console.log(authors);
+      //  console.log(authors);
       return authors.map(function (author) {
         bigTableTake.push(author);
         var section = createNode("section");
@@ -48,7 +48,7 @@ function onBlockIF() {
       });
     })
     .catch(function (error) {
-      console.log(error);
+      //   console.log(error);
     });
 
   setTimeout(() => {
@@ -65,7 +65,7 @@ function onBlockIF() {
     var consultingId = document.querySelectorAll(".Payooner");
     consultingId.forEach((x) => {
       x.addEventListener("click", function () {
-        console.log(x.id);
+        //  console.log(x.id);
         var sellerId = x.id;
         seller.push(sellerId);
         $("#modaleAceptFacturactionMOOW").modal({
@@ -78,7 +78,7 @@ function onBlockIF() {
     var authorPriceProduc = document.querySelectorAll(".authorPriceProduct");
     authorPriceProduc.forEach((Px) => {
       Px.addEventListener("click", function () {
-        console.log(Px.id);
+        //   console.log(Px.id);
         var priceProd = Px.id;
         document.getElementById(
           "NameProductId"
@@ -92,10 +92,10 @@ function onBlockIF() {
             var takeNumPro = document.getElementById(
               "inputGroupSelect04vali"
             ).value;
-            console.log(takeNumPro);
+            //    console.log(takeNumPro);
             takeNumProTable.push(takeNumPro);
             const sommeT = takeNumPro * priceProd;
-            console.log(sommeT);
+            //    console.log(sommeT);
             sommeproductW.push(sommeT);
             document.getElementById(
               "TotalProductId"
@@ -107,7 +107,7 @@ function onBlockIF() {
           .getElementById("uivantVotreOrdonnanceCkkiapay")
           .addEventListener("click", function () {
             const [sommeproducta] = sommeproductW.slice(-1);
-            console.log(sommeproducta);
+            //   console.log(sommeproducta);
             openKkiapayWidget({
               amount: `${sommeproducta} `,
               position: "center",
@@ -150,7 +150,7 @@ function onBlockIF() {
               }),
             }).then(function (response) {
               if (response.ok) {
-                console.log(response);
+                //   console.log(response);
               }
             });
           });
