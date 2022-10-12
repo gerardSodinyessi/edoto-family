@@ -18,7 +18,7 @@ function append(parent, el) {
 var bigTableTake = [];
 function openAllPharmaciCotonou() {
   const div = document.getElementById("autorsIdProduct");
-  fetch("https://edotofamilyapi.com/api/products")
+  fetch("https://edotofamilyapi.com/api/products/")
     .then((resp) => resp.json())
     .then(function (data) {
       let authors = data.results;
