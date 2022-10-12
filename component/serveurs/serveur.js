@@ -106,7 +106,7 @@ var a = parent.document.URL.substring(
 );
 var lastC = a.charAt(a.length - 1);
 //console.log("vovovovovovov " + lastC);
-window.onload = console.log(localStorage.getItem("storageName"));
+window.onload = localStorage.getItem("storageName");
 // c'est id de la personne connecté
 function postDataProfil() {
   var last_name = document.getElementById("recipient-last_name").value;
@@ -118,6 +118,7 @@ function postDataProfil() {
 
   fetch(`https://edotofamilyapi.com/patient/${UserConnectId}/`, {
     method: "PATCH",
+    mode: "no-cors",
     body: JSON.stringify({
       first_name: first_name,
       last_name: last_name,

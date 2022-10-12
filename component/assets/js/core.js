@@ -24,7 +24,7 @@ $(document).ready(function () {
     //$(".chat-user-info").addClass("show");
     // });
   } else {
-    console.log("je faire");
+    // console.log("je faire");
     $(".chat-user-info").addClass("show");
     $(".chat-bottom").addClass("small");
     $(".whatsapp_chat_support").addClass("margiNleftClassWhat");
