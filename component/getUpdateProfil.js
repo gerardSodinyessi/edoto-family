@@ -12,7 +12,7 @@ const urly = `https://edotofamilyapi.com/patient/${UserConnectIdi}/`;
 fetch(urly)
   .then((resp) => resp.json())
   .then(function (data) {
-    console.log(data);
+    //console.log(data);
     let span = createNode("span");
     span.innerHTML = `
     <div class="profile-detail" style="padding-bottom: 60px;">
