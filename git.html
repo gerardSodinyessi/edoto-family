@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+  <html>
+    <head>
+      <title>NoBack (episode 1)!</title>
+      <script language="JavaScript">
+        // Si vous utilisez se script, merci de m'en informer : tecman_one@yahoo.fr
+
+        //
+        // Ne pouvant contrer le retour arriere du navigateur,
+        // ou par d'autres appels ("window.history.back()")
+        // le principe est assez simple :
+        // Il suffit lors du retour arriere de demander de revenir en avant.
+        //
+        // En final, on fait un saut arriére qui commande directement un saut avant.
+        // => Retour à la page !
+        //
+
+        window.history.forward();
+
+        // Afin de démontrer le déroulement du processus
+        // Cette premiére page en construit (=appel) une autre.
+        // Cette page suivante utilise le processus décrit plus haut.
+        //
+        // Donc page 1 => page 2 => page 2 ...
+        //
+
+        // Pour certain navigateur, le processus nécessite l'utilisation
+        // de la méthode onUnLoad de la page (déchargement).
+        // Ceci explique l'implémentation de 'onunload="window.history.forward();"'
+      </script>
+    </head>
+    <body onunload="window.history.forward();"></body>
+  </html>
 </html>
