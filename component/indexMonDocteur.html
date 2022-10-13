@@ -324,11 +324,31 @@
 											<input class="profile-upload" type="file" accept="image/*"/>-->
 										</div>
 									</div>
+									<div class="media-body">
+										<div class="input-group">
+											<img src="assets/images/calendar-range.svg" alt="Generic placeholder image"
+											class=" align-self-center ml-3">&nbsp;&nbsp; &nbsp;&nbsp;
+											<p type="text" class="form-control"
+												aria-label=""
+												aria-describedby="button-addon-group-username">Vos disponibilés</p>
+											<div class="input-group-append">
+												<button class="btn btn-success mr-3" type="button"
+													id="button-addon-group-username" onclick="isToUptadeMyAvailable()">mettre à jour</button>
+												<!------>
+											</div>
+										</div>
+									</div>
 								<span id="getUserProfilIdFormeH"></span>
 							   </div>
 							</div>
 						</div>
+						<script>
+							function isToUptadeMyAvailable(){
+								document.getElementById('chat-user-infoA').style.display = "block"
+									$(".chat-bottom").add("small");
 
+							}
+						</script>
 						<div class="modal fade" id="exampleModalCreate" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 							<div class="modal-dialog" role="document">
 							  <div class="modal-content">
@@ -558,7 +578,7 @@
 					</div>
 					<!-- Start Chat User Info -->
 					<div id="changerCssuserInfo">
-						<div class="chat-user-info">
+						<div class="chat-user-info" id="chat-user-infoA">
 							<div class="chat-user-head">
 								<div class="row align-items-center">
 									<div class="col-9">
@@ -566,7 +586,7 @@
 									</div>
 									<div class="col-3">
 										<ul class="list-inline float-right mb-0">
-											<li class="list-inline-item">
+											<li class="list-inline-item" onclick="closeAbpfCentreModale()">
 												<a href="#" id="close-user-info"><img src="assets/images/X.svg"
 														alt="Generic placeholder image"></a>
 											</li>
@@ -574,6 +594,12 @@
 									</div>
 								</div>
 							</div>
+							<script>
+								function closeAbpfCentreModale() {
+									document.getElementById('chat-user-infoA').style.display = "none"
+									$(".chat-bottom").removeClass("small");
+								};
+							</script>
 							<div class="chat-user-body">
 								<div class="userbar">
 									<img class="user-pic img-fluid" style="height: 20vh; width:17vh;"

@@ -7,7 +7,7 @@ function postDataProfilHospi() {
 
   //Create new formData object then append file
 
-  fetch(`https://edotofamilyapi.com/medecin/${storageNameIdH}`, {
+  fetch(`https://edotofamilyapi.com/medecin/${storageNameIdH}/`, {
     method: "PATCH",
     body: JSON.stringify({
       first_name: first_nameH,
