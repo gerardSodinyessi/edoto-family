@@ -9,7 +9,7 @@ function append(parent, el) {
 }
 
 const divS = document.getElementById("theAllMsgGetHospital");
-const urlS = `https://edotofamilyapi.com/api/auth/medecin/${UserConnectIdHmsg}`;
+const urlS = `https://edotofamilyapi.com/api/auth/medecin/${UserConnectIdHmsg}/`;
 
 fetch(urlS)
   .then((resp) => resp.json())

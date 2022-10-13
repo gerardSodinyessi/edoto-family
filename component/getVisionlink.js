@@ -19,7 +19,7 @@ function append(parent, el) {
 }
 
 const divlink = document.getElementById("getVisionlinkMsg");
-const urlx = `https://edotofamilyapi.com/api/auth/patient/${UserConnectlink}`;
+const urlx = `https://edotofamilyapi.com/api/auth/patient/${UserConnectlink}/`;
 
 fetch(urlx)
   .then((resp) => resp.json())
