@@ -37,7 +37,6 @@ function getData() {
             document.getElementById("passwordlogin").value = "";
             document.getElementById("exampleAnimatedsuccess").style.display =
               "block";
-
             setTimeout(() => {
               document.getElementById("exampleAnimatedsuccess").style.display =
                 "none";
