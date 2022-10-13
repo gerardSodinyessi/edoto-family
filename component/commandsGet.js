@@ -8,7 +8,7 @@ function append(parent, el) {
 }
 
 const divOder = document.getElementById("getUserMessageAllcommands");
-const urlk = `https://edotofamilyapi.com/api/auth/medecin/${UserConnectIdCommand}`;
+const urlk = `https://edotofamilyapi.com/api/auth/medecin/${UserConnectIdCommand}/`;
 
 fetch(urlk)
   .then((resp) => resp.json())
