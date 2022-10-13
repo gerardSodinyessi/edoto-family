@@ -163,5 +163,5 @@ function openAllPharmaciCotonou() {
         //  .addEventListener("click", function () {});
       });
     });
-  }, 1000);
+  }, 500);
 }
