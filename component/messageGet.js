@@ -8,7 +8,7 @@ function append(parent, el) {
 }
 
 const div = document.getElementById("getUserMessageAll");
-const url = `https://edotofamilyapi.com/api/auth/medecin/${UserConnectIdH}`;
+const url = `https://edotofamilyapi.com/api/auth/medecin/${UserConnectIdH}/`;
 
 fetch(url)
   .then((resp) => resp.json())
