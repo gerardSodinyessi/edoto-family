@@ -57,6 +57,8 @@
 		if(!UserConnectIdacces){
 			window.location.href = "../index.html"
 		}
+		if ($.browser.msie)
+    $(document).keydown(function(e) { if (e.keyCode == 8) window.event.keyCode = 0;});
 	</script>
 </head>
 
@@ -565,7 +567,7 @@
 			</div>
 		</div>
 		<!--modal confirm message send--->
-		<div class="modal incoming-voice-modal fade" id="modalConfirmMessageSend" tabindex="-1" role="dialog"
+		<div style="background-color: blue;" class="modal incoming-voice-modal fade" id="modalConfirmMessageSend" tabindex="-1" role="dialog"
 		aria-labelledby="incomingVoiceCallTitle" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered" role="document">
 			<div class="modal-content">
