@@ -1,4 +1,7 @@
 const UserConnectIdToBuy = localStorage.getItem("storageName");
+const UserConnectPersonna = localStorage.getItem("storageselectMyPersonna");
+const UserConnectIdToTrans = localStorage.getItem("storageNameTransq");
+
 //id du seller
 var seller = [];
 //id du product
@@ -112,7 +115,6 @@ function openAllPharmaciCotonou() {
               position: "center",
               callback: "javascript:sendmycommandinCentremodale()",
               data: "",
-              paymentmethod: "momo",
               theme: "blue",
               key: "deb48fc468f8e7fcc35aee7ae721254a3427f5e5",
             });

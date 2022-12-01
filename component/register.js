@@ -3,7 +3,7 @@ function postData() {
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
   var tel = document.getElementById("tel").value;
-
+  var selectMyPersonna = document.getElementById("selectMyPersonna").value;
   fetch("https://edotofamilyapi.com/api/auth/patient/registration/", {
     method: "POST",
     body: JSON.stringify({
@@ -33,6 +33,7 @@ function postData() {
         document.getElementById("tel").value = "";
         document.getElementById("ChargementId").style.display = "none";
         document.getElementById("exampleAnimated").style.display = "block";
+        localStorage.setItem("storageselectMyPersonna", selectMyPersonna);
         setTimeout(() => {
           document.getElementById("exampleAnimated").style.display = "none";
           window.location.href = "loginPatient.html";

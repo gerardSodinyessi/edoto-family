@@ -36,6 +36,11 @@ input.controle:valid + span:before {
   right: 10px;
   top: 360px;
 }
+.resultat1XJ {
+  position: absolute;
+  right: 10px;
+  top: 462px;
+}
 .resultat2 {
   position: absolute;
   right: 10px;

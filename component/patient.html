@@ -761,11 +761,15 @@ window.history.forward();
 						aria-labelledby="pills-addchat-tab-justified">
 						<div class="chat-addbar">
 							<div class="chat-left-headbar">
+								
 								<div class="row align-items-center">
-									<div class="col-8">
+									
+									<div class="col-3">
+										
 										<ul class="list-unstyled mb-0">
 											<li class="media">
 												<a style="display: inline-flex; width: 23px; cursor: pointer;" id="dropdownMenuButton" >
+											
 													<span class="badge badge-primary " style="position:relative; 
 											  left: 13px;   font-size: 5px; border-radius: 100%; width: 15px; height: 15px;"
 														id="numberNotification">.</span>
@@ -785,9 +789,10 @@ window.history.forward();
 											</li>
 										</ul>
 									</div>
-									<div class="col-4 mt-3 mb-0">
+									<div class="col-9 mt-3 mb-0">
+										
 										<a href="#" id="view-user-info">
-											<img src="assets/images/lesLogosCentre.png" alt="" style=" height:6vh; width:6vh;">
+											<p >les centres <img src="assets/images/lesLogosCentre.png" alt="" style=" height:6vh; width:6vh;"></p>
 											</a>
 										<!---<a href="#" data-toggle="modal" data-target="#createGroup"><img
 												src="assets/images/folder-plus.svg" alt="Generic placeholder image"
@@ -879,7 +884,7 @@ window.history.forward();
 												</div>
 											</div>
 											<span id="demoTimer###"></span>									
-											<h6 style="color: #f82249; margin-top: 5px;" id="demoTimer"></h6>
+											<h6 style="color: #f82249; margin-top: 5px; display: none;" id="demoTimer"></h6>
 											<h2 style="color: #f82249; margin-top: 5px;">Planning familial</h2>
 											<div class="chat-message">
 												<div class="chat-message-text">
@@ -1057,19 +1062,19 @@ window.history.forward();
 						<div class="chat-listbar">
 							<div class="chat-left-headbar">
 								<div class="row align-items-center">
-									<div class="col-5">
+									<div class="col-6">
 										<ul class="list-unstyled mb-0">
 											<li class="media">
 												<img class="align-self-center mr-2" src="assets/images/men1.png"
 													alt="Generic placeholder image"
 													style="width: 44px; height: 44px; border-radius: 100%; display: none;">
 												<div class="media-body">
-													<h5 class="mb-0 mt-2">Les Plannings</h5>
+													<h5 class="mb-0 mt-2">Les informations </h5>
 												</div>
 											</li>
 										</ul>
 									</div>
-									<div class="col-7">
+									<div class="col-6">
 										<a href="loginPatient.html" data-toggle="tooltip" data-placement="right"
 											title="Logout"><i class="fa fa-sign-out" style="color: #f82249;"></i></a>
 									<!--	<div class="dropdown">
@@ -2013,14 +2018,14 @@ window.history.forward();
 									alt="Generic placeholder image" style="font-size: 24px; color:red; ">
 								
 								</a>
-								Plannings
-						</li>
+								Information
+						</li>&nbsp;
 						<li class="nav-item">
 							<a class="nav-link" id="pills-setting-tab-justified" data-toggle="pill"
 								href="#pills-setting-justified" role="tab" aria-controls="pills-setting-justified"
 								aria-selected="false"><img src="assets/images/education-svgrepo-com.svg"
 									alt="Generic placeholder image" style="font-size: 24px; color:red;"></a>
-									Formations
+									Formation
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" id="pills-profile-tab-justified" data-toggle="pill"
@@ -4138,7 +4143,6 @@ window.history.forward();
 		 <!-- end jQuery 1.8+ Api chat Whatsapp-->
 	<!-------------- modal------------>
 	<script src="maps.js"></script>
-	<script src="../abonnements.js"></script>
 	<script src="getUpdateProfil.js"></script>
 	<script src="getVisionlink.js"></script>
 	<script src="./serveurs/serveur.js"></script>
