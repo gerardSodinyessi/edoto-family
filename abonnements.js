@@ -59,7 +59,7 @@ fetch(urla)
 function OneABonnement() {
   if (UserConnectIdToBuy) {
     openKkiapayWidget({
-      amount: "10",
+      amount: "491",
       position: "center",
       callback: "javascript:sendmycommandinCentremodale()",
       data: "",
