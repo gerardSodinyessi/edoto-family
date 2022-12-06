@@ -1836,7 +1836,7 @@ window.history.forward();
 					<!-- End Chat Profilebar -->
 					<!-- Start Chat Settingbar -->
 					<div class="tab-pane fade" id="pills-setting-justified" role="tabpanel"
-						aria-labelledby="pills-setting-tab-justified">
+						aria-labelledby="pills-setting-tab-justified" >
 						<div class="chat-settingbar">
 							<div class="chat-left-headbar">
 								<div class="row align-items-center">
@@ -2000,7 +2000,7 @@ window.history.forward();
 					</div>
 					<!-- End Chat Settingbar -->
 				</div>
-				<div class="chat-menu">
+				<div class="chat-menu" >
 					<ul class="nav nav-pills nav-justified mb-0" id="pills-tab-justified" role="tablist">
 						<li class="nav-item">
 							<a class="nav-link active" id="pills-addchat-tab-justified" data-toggle="pill"
@@ -2041,7 +2041,7 @@ window.history.forward();
 			</div>
 			<!-- End Chat Leftbar -->
 			<!-- Start Chat Rightbar -->
-			<div class="chat-rightbar">
+			<div class="chat-rightbar"  id="rightbarUN1">
 				<!-- Start Chat Detail -->
 				<div class="chat-detail">
 					<div class="chat-head">
@@ -3864,8 +3864,8 @@ window.history.forward();
 							<div class="col-3">
 								<ul class="list-inline float-right mb-0">
 									<li class="list-inline-item">
-										<a href="#" id="close-user-info"><img src="assets/images/X.svg"
-												alt="Generic placeholder image"></a>
+										<!--<a href="#" id="close-user-info"><img src="assets/images/X.svg"
+												alt="Generic placeholder image"></a>-->
 									</li>
 								</ul>
 							</div>
@@ -3957,7 +3957,65 @@ window.history.forward();
 				</div>-->
 				<!--les hôpitaux-->
 				<!-- End Chat User Info -->
-			</div> 
+			</div>
+			<div class="chat-rightbar" id="rightbarDEUX2" style="display: none;">
+				<div class="container" style="margin: 20px;">
+					<div class="row">
+						<div class="col-6">
+							<div class="hovereffect" style="height: 45vh;">
+								<img style="height: 45vh;" class="img-responsive" src="assets/images/kalendrier.jpg" alt="">
+									<div class="overlay">
+										<h2>Consultation de calendrier menstruel.</h2>
+										<p>
+											<a style="cursor: pointer;" onclick="AskTypeCycle()">En savoir plus</a>
+										</p>
+									</div>
+							</div>							
+						</div>
+						<div class="col-6">
+							<div class="hovereffect" style="height: 45vh;">
+								<img style="height: 45vh;" class="img-responsive" src="assets/images/infosex.jpeg" alt="">
+									<div class="overlay">
+										<h2>Informations sur la santé sexuelle.</h2>
+										<p>
+											<a class="nav-link" id="pills-chat-tab-justified" data-toggle="pill"
+											href="#pills-chat-justified" role="tab" aria-controls="pills-chat-justified"
+											aria-selected="false">En savoir plus</a>
+										</p>
+									</div>
+							</div>
+						</div>
+					</div>
+					<div></div>&nbsp;&nbsp;&nbsp;&nbsp;
+					<div class="row">
+						<div class="col-6">
+							<div class="hovereffect" style="height: 45vh;">
+								<img style="height: 45vh;" class="img-responsive" src="assets/images/konsutation.jpg" alt="">
+									<div class="overlay">
+										<h2>Consultation d'un médecin</h2>
+										<p>
+											<a href="#">En savoir plus</a>
+										</p>
+									</div>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="hovereffect" style="height: 45vh;">
+								<img style="height: 45vh;" class="img-responsive" src="assets/images/phormation.jpg" alt="">
+									<div class="overlay">
+										<h2>Formation sur la santé sexuelle des adolescents.</h2>
+										<p>
+											<a class="nav-link" id="pills-setting-tab-justified" data-toggle="pill"
+											href="#pills-setting-justified" role="tab" aria-controls="pills-setting-justified"
+											aria-selected="false">En savoir plus</a>
+										</p>
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
 			<!-- End Chat Rightbar -->
 		</div>
 		<!-- End Chat Layout -->
@@ -4222,6 +4280,7 @@ if(UserConnectIdToBuyI){
 };
 
 }
+
 	</script>
 	<!-- End js -->
 </body>

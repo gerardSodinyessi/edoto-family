@@ -42,7 +42,8 @@ if (UserConnectId) {
         <ul class="tilesWrap">
         <li>
           
-          <h3> ${author.username}</h3>
+          <h3 style="margin-bottom: 15px;"> ${author.username}</h3>
+          <h3> <img src="assets/images/telephone.svg" alt=""> ${author.tel}</h3>
           
             <img src="assets/images/lesLogosCentre.png" alt="" class="child bounce">
           
@@ -189,7 +190,7 @@ function consultingIdClass(clicked) {
             backdrop: false,
             keyboard: true,
           });
-        }, 5000);
+        }, 100);
       } else {
         alert(`Quelque chose s'est mal passé`);
       }

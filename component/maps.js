@@ -25,7 +25,7 @@ function openAllPharmaciCotonou() {
     .then((resp) => resp.json())
     .then(function (data) {
       let authors = data.results;
-      //  console.log(authors);
+      //console.log(authors);
       return authors.map(function (author) {
         bigTableTake.push(author);
         var section = createNode("section");
